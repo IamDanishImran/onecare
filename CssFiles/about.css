@@ -1,0 +1,301 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: monospace;
+    scroll-behavior: smooth;
+}
+
+.aboutSection {
+    height: 90vh;
+    width: auto;
+    padding: 0 10%;
+    background-color: #304059;
+}
+
+.intro-Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.intro  {
+    color: #fff;
+    width: 60%;
+}
+
+.intro h2 {
+    font-size: 25px;
+}
+
+.intro h1 {
+    font-size: 50px;
+}
+
+#introTitle {
+    color: #2639ed;
+}
+
+.intro p {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.introImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.introImage img {
+    width: 400px;
+    height: 400px;
+}
+
+/* ---------- Our Purpose ---------- */
+.ourPurpose {
+    height: 40vh;
+    width: auto;
+    background-color: #f5fcff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PurposeWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Purpose {
+    margin: 10px;
+    padding: 10px;
+    height: 180px;
+    width: 650px;
+}
+
+.Purpose h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.Purpose p {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+/* ------ Gallery Section -------- */
+.gallerySection {
+    background-color: #10162f;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .galleryWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .galleryTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .galleryPic {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  marquee {
+    display: flex; /* This line can be removed, it doesn't affect functionality */
+    animation: marquee 20s linear infinite; /* Optional: Add animation for smooth scrolling */
+  }
+  
+  .galleryItem {
+    background-color: #c9c9c9;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #000;
+    display: inline-block; /* This allows horizontal scrolling */
+  }
+  
+  .galleryItem img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+
+/*---------- Document Section ----------- */
+.documentSection {
+    height: 100vh;
+    width: auto;
+    background-color: #6b79fc;
+}
+
+.documentWrapper {
+    background-color: yellow;
+    padding: 10px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.DocColumn {
+    background-color: green;
+    width: 30%;
+    height: 100%;
+}
+
+
+/* --------- Members Section --------- */
+.teamSection {
+    height: 80vh;
+    width: auto;
+    background-color: #f5fcff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teamWrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamTitle {
+    text-align: center;
+    padding: 30px;
+}
+
+.teamTitle h1 {
+    font-size: 25px;
+}
+
+.teamTitle p {
+    font-size: 15px;
+}
+
+.teamPic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.members {
+    position: relative;
+    display: flex;
+    margin: 10px;
+}
+
+.members img {
+    width: 210px;
+    height: 280px;
+}
+
+.Role {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 70, 172, 0.3);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    font-size: 18px;
+    transition: opacity 0.3s;
+}
+
+.members:hover .Role {
+    opacity: 100;
+}
+
+/* --------- Promote Secion -------- */
+.promoteSection {
+    height: 30vh;
+    width: auto;
+    background-color: #f5fcff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promoWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 500px;
+}
+
+.promoContainer {
+    opacity: 1;
+    margin: 20px;
+    width: 50%;
+    height: 120px;
+    background-color: #f5fcff;
+    opacity: 1;
+    background-size: 50px 50px;
+    background-image: repeating-linear-gradient(135deg, #000000 0, #000000 0.8px, transparent 0, transparent 5%);
+}
+
+.PromoteBox {
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.PromoteBox1 p {
+    margin-bottom: 45px;
+}
+
+.PromoteBox2 p {
+    margin-bottom: 30px;
+}
+
+.link {
+    font-size: 15px;
+}
+
+.link:hover {
+    color: #6b79fc;
+}

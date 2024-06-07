@@ -1,0 +1,175 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: monospace;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.loginSection {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff0e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.loginForm {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #000;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.loginTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.loginTitle h2 {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.loginTitle h1 {
+  font-size: 30px;
+}
+
+.loginTitle p {
+  font-size: 15px;
+}
+
+.RowInput {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+}
+
+.RowOne, 
+.RowTwo, 
+.RowThree, 
+.RowFour, 
+.RowFive, 
+.Error {
+  width: 100%;
+  max-width: 500px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+input {
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  width: 100%;
+}
+
+.RowThree,
+.RowFour, 
+.RowFive, 
+.RowSix {
+  display: flex;
+  flex-direction: column;
+}
+
+.RowFour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.RowFour a:hover {
+  color: #5a37e7;
+}
+
+span a {
+  color: #3a10e5;
+}
+
+.RowSix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  padding: 20px 0px;
+}
+
+/* ----- Error Text -------- */
+.Error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  color: red;
+  font-size: 15px;
+}
+
+/* ------------ Buttons & Link --------- */
+.Btn {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  height: 32px;
+  background-color: #3a10e5;
+  color: #fff;
+  margin-bottom: 5px;
+  transition: .2s;
+  width: 100%;
+}
+
+.Btn:hover {
+  background-color: #5a37e7;
+}
+
+.backBtn {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  height: 32px;
+  margin-bottom: 5px;
+  transition: .2s;
+  width: 100%;
+}
+
+.backBtn:hover {
+  background-color: #3c3c3c;
+}
+
+#link {
+  font-size: 15px;
+  color: #fff;
+}
+
+.RowFour #link, .RowSix #link {
+  color: #000;
+  transition: .2s;
+}
+
+.RowFour #link:hover, .RowSix #link:hover {
+  color: #3a10e5;
+}

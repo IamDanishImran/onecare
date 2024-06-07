@@ -1,0 +1,169 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: monospace;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.SignUpSection {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff0e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.SignUpForm {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #000;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.SignUpTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.SignUpTitle h2 {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.SignUpTitle h1 {
+  font-size: 30px;
+}
+
+.SignUpTitle p {
+  font-size: 15px;
+}
+
+.RowInput {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+}
+
+.RowOne,
+.RowTwo,
+.RowThree,
+.RowFour,
+.RowSix,
+.RowSeven,
+.Error {
+  width: 100%;
+  max-width: 500px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+input {
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  width: 100%;
+}
+
+.RowFour,
+.RowSix,
+.RowSeven {
+  display: flex;
+  flex-direction: column;
+}
+
+.RowThree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.ColBox {
+  width: 46%;
+}
+
+.RowSeven {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  padding: 20px 0px;
+}
+
+/* ----- Error Text -------- */
+.Error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  color: red;
+  font-size: 1em;
+}
+
+/* ------- Buttons & Links ---------- */
+.Btn {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  height: 32px;
+  background-color: #3a10e5;
+  color: #fff;
+  margin-bottom: 5px;
+  transition: .2s;
+  width: 100%;
+}
+
+.Btn:hover {
+  background-color: #5a37e7;
+}
+
+.backBtn {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  height: 32px;
+  margin-bottom: 5px;
+  transition: .2s;
+  width: 100%;
+}
+
+.backBtn:hover {
+  background-color: #3c3c3c;
+}
+
+#link {
+  font-size: 15px;
+  color: #fff;
+}
+
+.RowSeven #link {
+  color: #000;
+  transition: .2s;
+}
+
+.RowSeven #link:hover {
+  color: #3a10e5;
+}
