@@ -1,7 +1,6 @@
 <?php
 include 'connect.php';
 
-
 $name = $phone = $email = $address = "";
 
 if (isset($_POST['autofill'])) {
@@ -25,6 +24,7 @@ if (isset($_POST['autofill'])) {
 <head>
     <meta charset="UTF-8">
     <title>Donation Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CssFiles/donor.css"> 
 </head>
 <body>
@@ -103,11 +103,7 @@ if (isset($_POST['autofill'])) {
     </form>
 </div>
 
+<!-- Footer Section -->
+ <?php include 'footer.php'; ?>
 </body>
 </html>
-
-<?php
-$conn->close();
-include 'footer.php';
-?>
-
