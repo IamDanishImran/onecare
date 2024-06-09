@@ -17,6 +17,8 @@ if (isset($_POST['autofill'])) {
         $address = $row['address'];
     }
 }
+
+// if(for)
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +28,7 @@ if (isset($_POST['autofill'])) {
     <title>Donation Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CssFiles/donor.css"> 
+    <script src="donor.js" defer></script>
 </head>
 <body>
 <section class="main">
@@ -35,22 +38,21 @@ if (isset($_POST['autofill'])) {
         <!-- Intro Section -->
         <article class="intro-Content">
             <section class="intro">
-                <h1>Welcome to the<br><span id="introTitle">OneCare</span></h1>
+                <h1>Transform Lives<br><span>Your Donation Makes a World of Difference</span></h1>
                 <br>
-                <p>This is temporary text in a single paragraph. Perhaps it will be
-                    change soon before launch the websites. Thank you.  
-                    This project will be the best system in UTeM.
+                <p>Donations greatly impact the poor in Melaka by providing essential resources like food, clean water, education, and healthcare.
+                   These contributions help families overcome daily struggles, ensure children can attend school, and offer adults necessary medical care.
+                    By supporting local charities, donors empower individuals to break the cycle of poverty and improve their quality of life.
                 </p>
-                <button class="BtnStart">Get Started</button>
             </section>
             <section class="introImage">
-                <img src="media/teamIllustrator.png" alt="Intro-illustration">
+                <img src="media/donation.png" alt="Intro-illustration">
             </section>
         </article>
     </section>
 
 <div class="DonationSection">
-    <form class="DonationForm" action="submit_donation.php" method="post" enctype="multipart/form-data">
+    <form class="DonationForm" method="post" enctype="multipart/form-data">
         <div class="DonationTitle">
             <h1>Donation Form</h1>
             <p>Please fill in the details below to make a donation</p>
@@ -97,8 +99,9 @@ if (isset($_POST['autofill'])) {
         </div>
 
         <div class="RowSeven">
-            <button class="Btn" type="submit">Submit</button>
-            <button class="backBtn" type="submit" name="autofill">Autofill</button>
+
+            <button class="Btn" type="submit" onclick="submitForm()">Submit</button>
+        
         </div>
     </form>
 </div>
