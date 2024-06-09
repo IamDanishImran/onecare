@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+}
+
+
+/* First Page */
+.Container {
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+}
+
+.FirstPageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #214170;
+    gap: 50px;
+    height: 100vh;
+}
+
+.section-text {
+    background-color: transparent;
+    padding: 20px;
+}
+
+.section-text .RowOne h1 {
+    color: #fff;
+    background-color: transparent;
+    padding-left: 30px;
+    font-size: 60px;
+
+}
+
+.section-text .RowTwo {
+    color: #fff;
+    padding-top: 20px;
+    background-color: transparent;
+    padding-left: 32px;
+    font-size: 18px;
+}
+
+.section-image {
+    background-color: transparent;
+    padding: 20px;
+}
+
+.FirstPageContainer img {
+    width: 350px;
+    height: auto;
+}
+
+
+/* Second Page */
+.Container-statistic {
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+}
+
+.SecondPageContainer {
+    background-color: #e7e7e7;
+    display: flex;
+    gap: 50px;
+    height: auto;
+}
+
+.statisticvolunteer {
+    justify-content: center;
+    padding: 135px;
+}
+
+.statisticvolunteer .RowOne h1{
+    color: #001ec9;
+    font-size: 50px;
+    padding-bottom: 30px;
+
+}
+
+.statisticvolunteer .RowOne p {
+    color: #001ec9;
+    font-size: 18px;
+}
+
+.statisticvolunteer .RowThree {
+    background-color: transparent;
+    padding-top: 20px;
+}
+
+.statisticvolunteer .RowFour {
+    background-color: transparent;
+    padding-top: 20px;
+}
+
+
+/* Third Page */
+.Container-opportunities {
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+}
+
+.ThirdPageContainer {
+    background-color: #214170;
+    gap: 50px;
+    height: 125vh;
+}
+
+.opportunitiesvolunteer .RowOne h1{
+    text-align: center;
+    padding-bottom: 13px;
+    padding-top: 50px;
+    color: #ffffff;
+}
+
+.opportunitiesvolunteer .RowOne p {
+    color: #fff;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.opportunitiesvolunteer .RowTwo2 {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Search Container */
+.search-container {
+    background-color: transparent;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 15px 15px 15px 15px;
+    outline: none;
+    width: 300px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: none ;
+    background-color: #4c4cff;
+    color: white;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #3a3aa3;
+}
+
+
+/* Places */
+.places-container {
+    justify-content: center;
+    margin: 25px;
+    display: flex;
+    gap: 20px;
+}
+
+.places {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding: 16px;
+}
+
+.places img {
+    width: 100%;
+    height: auto;
+}
+
+.places h3 {
+    margin: 16px 0 8px;
+    color: #333;
+}
+
+.places p {
+    margin: 4px 0;
+    color: #555;
+}
+
+.places ul {
+    list-style-type: none;
+    padding: 0;
+    color: #474747;
+}
+
+.places ul li {
+    margin: 4px 0;
+    color: #001ec9;
+}
+
+.places button {
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.places button:hover {
+    background-color: #3a5bbb;
+}
+
+
+/* Fourth Page*/
+.Container-feedback {
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding: 120px;
+    background-color: #e7e7e7;
+}
+
+.FourthPageContainer {
+    background-color: #e7e7e7;
+    gap: 50px;
+    height: auto;
+}
+
+.userfeedback {
+    background-color: #e7e7e7;
+    color: #001ec9;
+    padding-top: 30px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+}
+
+.userfeedback .Border {
+    text-align: center;
+}
+.userfeedback .Border h1{
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.userfeedback .Border p{
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+
+.userfeedback .Border button {
+    background-color: #001ec9;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.userfeedback button:hover {
+    background-color: #0069d9;
+}
