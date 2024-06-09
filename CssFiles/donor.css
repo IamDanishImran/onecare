@@ -14,38 +14,17 @@
     font-size: 50px;
 }
 
-#introTitle {
-    color: #2639ed;
-}
-
 .intro p {
     font-size: 15px;
     line-height: 20px;
 }
 
-.BtnStart {
-    margin-top: 20px;
-    align-items: center;
-    font-weight: bold;
-    font-size: 18px;
-    width: 160px;
-    height: 45px;
-    color: #fff;
-    background-color: #2639ed;
-    box-shadow: -4px 4px #000;
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: .2s;
-}
-
-.BtnStart:hover {
-    box-shadow: -8px 8px #000;
-}
 
 .intro-Content {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 90px;
 }
 
 .introImage {
@@ -77,7 +56,7 @@
   .DonationSection {
     height: 120vh;
     width: 100%;
-    background-color: #9bdefb;
+    background-color: #b1e5fc;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -215,6 +194,21 @@
   
   .backBtn:hover {
     background-color: #3c3c3c;
+  }
+
+  .AFBtn{
+    color: #fff;
+    background-color: #323131;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    height: 32px;
+    margin-bottom: 5px;
+    transition: .2s;
+    width: 100%;
+  }
+  
+  .AFBtn:hover{
+    background-color: #666666;
   }
   
   #link {
