@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>OneCare</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CssFiles/footer.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -41,7 +40,7 @@
                         <p><a href="#">Terms of Use</a></p>
                     </div>
                     <div class="footerBox2">
-                        <p><a href="#">OneCare Privacy & Policy</a></p>
+                        <p><a href="privacy.php">OneCare Privacy & Policy</a></p>
                     </div>
                 </div>
             </article>
