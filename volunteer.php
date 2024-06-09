@@ -8,8 +8,10 @@
 </head>
 <body>
 
-    <div class="Container">
-        <div class="FirstPageContainer">
+    <section class="Container">
+     <!-- Intro Section -->
+        <section class="FirstPageContainer">
+
             <div class="section-text">
                 <div class="RowOne">
                     <h1>Join a dedicated</h1>
@@ -24,12 +26,14 @@
             <div class="section-image">
                 <img src="/images/BukitBintang.jpg" alt="Volunteer pictures">
             </div>
-        </div>
-    </div>
+        </section>
+    </section>
 
     <!-- Section Statistics -->
-    <div class="Container-statistic">
-        <div class="SecondPageContainer">
+    <section class="Container-statistic">
+
+        <section class="SecondPageContainer">
+
             <div class="statisticvolunteer">
                 <div class="RowOne">
                     <h1>Making an impact through volunteering</h1>
@@ -50,12 +54,12 @@
             </div>
 
             </div>
-        </div>
-    </div>
+        </section>
+    </section>
 
     <!-- Opportunities Volunteer -->
-    <div class="Container-opportunities">
-        <div class="ThirdPageContainer">
+    <section class="Container-opportunities">
+        <section class="ThirdPageContainer">
             <div class="opportunitiesvolunteer">
                     <div class="RowOne">
                         <h1>Join us to unlock opportunities in fighting poverty. </h1>
@@ -113,11 +117,11 @@
 
                     </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </section>
 
-    <div class="Container-feedback">
-        <div class="FourthPageContainer">
+    <section class="Container-feedback">
+        <section class="FourthPageContainer">
             <div class="userfeedback">
                 <div class="Border">
                     <h1>Tell us what you think!</h1>
@@ -126,7 +130,10 @@
                     <button>Learn More</button>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </section>
+
+    <!-- Footer Section -->
+     <?php include 'footer.php'; ?>
 </body>
 </html>
