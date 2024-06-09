@@ -75,7 +75,7 @@
   }
   
   .DonationSection {
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     background-color: #9bdefb;
     display: flex;
@@ -142,7 +142,7 @@
     font-size: 1em;
   }
   
-  input, select, textarea {
+  input, select {
     height: 35px;
     border-radius: 5px;
     border: 1px solid #000;
@@ -151,7 +151,13 @@
   }
   
   textarea {
-    height: auto;
+    border-radius: 5px;
+    border: 1px solid #000;
+    height: 160px;
+    width: 100%;
+    resize: none;
+    
+
   }
   
   .RowFour,
