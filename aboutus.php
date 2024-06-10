@@ -59,10 +59,6 @@
 
         <section class="gallerySection">
   <div class="galleryWrapper">
-    <div class="galleryTitle">
-      <h2>Our Gallery</h2>
-      <p>This is who we are. We are the members of the team that organised this community.</p>
-    </div>
     <div class="galleryPic">
       <marquee behavior="scroll" direction="left">
         <div class="galleryItem" style="display: inline-block;">
@@ -90,17 +86,68 @@
             <div class="documentWrapper">
                 <div class="DocColumn">
                     <div class="Document">
-                        <h1>Test</h1>
+                        <div class="DocBox">
+                        <h1>Values to live by</h1>
+                        <p>Everybody on the team shares the same vision: to make 
+                            cloud management easy for everyone, whether you are at 
+                            the beginner or expert level. We also strongly believe that 
+                            by instilling these six core values in each of our fellow members, 
+                            we can cultivate a healthy working environment with great camaraderie 
+                            among our members.
+                        </p>
+                        </div>
                     </div>
                 </div>
                 <div class="DocColumn">
                     <div class="Document">
-                    <h1>Test</h1>
+                        <div class="DocBox">
+                            <h1>Dependability</h1>
+                            <p>For every single task given to us, we will always place 
+                                quality as the topmost priority. Each of us readily contributes 
+                                solid ideas as well as collectively working hard towards bringing 
+                                out the best quality in each endeavor.
+                            </p>
+                        </div>
+                        <div class="DocBox">
+                            <h1>Creativity</h1>
+                            <p>We always strive to come up with the best approach to 
+                                overcome challenges when building OneCare. Our ingenuity is 
+                                not only reflected on the design of OneCare, but also during 
+                                problem-solving times whenever we face any obstacles.
+                            </p>
+                        </div>
+                        <div class="DocBox">
+                            <h1>Consistency</h1>
+                            <p>We drive ourselves at a steady momentum in achieving the best 
+                                quality when working towards every objective. Slowing down is 
+                                not an option when chances of improvements are at stake.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="DocColumn">
                     <div class="Document">
-                    <h1>Test</h1>
+                        <div class="DocBox">
+                            <h1>Honesty</h1>
+                            <p>Our honesty and integrity are manifested in our product where 
+                                we believe that our customers are always right and in turn, we 
+                                can count on them to give honest feedback.
+                            </p>
+                        </div>
+                        <div class="DocBox">
+                            <h1>Positivity</h1>
+                            <p>Some misfortunes are just inevitable in our human lives. But our 
+                                positive mindset will not let them suppress us from bringing out 
+                                the best in ourselves and taking OneCare to greater heights.
+                            </p>
+                        </div>
+                        <div class="DocBox">
+                            <h1>Efficiency</h1>
+                            <p>When you have a team spanning across the state, efficiency, 
+                                speed and skilled coordination play a big role when it comes to 
+                                serving our poverty victims around Melacca.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

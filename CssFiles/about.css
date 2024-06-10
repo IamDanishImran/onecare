@@ -92,7 +92,7 @@
 /* ------ Gallery Section -------- */
 .gallerySection {
     background-color: #10162f;
-    height: 50vh;
+    height: 30vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -108,19 +108,6 @@
     align-items: center;
     justify-content: center;
   }
-  
-  .galleryTitle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 15px;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-  }
-  
   .galleryPic {
     width: 100%;
     overflow: hidden;
@@ -154,23 +141,45 @@
 .documentSection {
     height: 100vh;
     width: auto;
-    background-color: #6b79fc;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .documentWrapper {
-    background-color: yellow;
-    padding: 10px;
     display: flex;
     height: 100%;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .DocColumn {
-    background-color: green;
     width: 30%;
     height: 100%;
+}
+
+.Document {
+    padding: 80px 10px 0px 10px;
+}
+
+.DocBox {
+    margin: 10px 0px 15px 0px;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: -4px 4px #000;
+}
+
+.DocBox h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.DocBox p {
+    line-height: 20px;
+    font-size: 15px;
 }
 
 

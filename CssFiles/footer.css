@@ -54,6 +54,18 @@
     background-color: transparent;
     border: 3px solid #fff;
     margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconMedia:hover {
+    background-color: #bebebe;
+}
+
+.iconMedia i {
+    color: #ffffff;
+    font-size: 20px;
 }
 
 .footerCol5, .footerCol6 {
@@ -81,4 +93,8 @@
     color: #ffd300;
     text-decoration: none;
     font-size: 13px;
+}
+
+.footerCol5 a:hover, .footerCol6 a:hover {
+    color: #ffe047;
 }
