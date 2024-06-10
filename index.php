@@ -20,8 +20,7 @@
                 <h1>Welcome to the<br><span id="introTitle">OneCare</span></h1>
                 <br>
                 <p>This is temporary text in a single paragraph. Perhaps it will be
-                    change soon before launch the websites. Thank you. 
-                    This project will be the best system in UTeM.
+                    change soon before we launch the websites, thank you.
                 </p>
                 <button class="BtnStart">Get Started</button>
             </section>

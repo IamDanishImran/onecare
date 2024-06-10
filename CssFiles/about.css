@@ -9,7 +9,7 @@
 }
 
 .aboutSection {
-    height: 90vh;
+    height: 100vh;
     width: auto;
     padding: 0 10%;
     background-color: #304059;
@@ -60,7 +60,6 @@
 .ourPurpose {
     height: 40vh;
     width: auto;
-    background-color: #f5fcff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,7 +90,6 @@
 
 /* ------ Gallery Section -------- */
 .gallerySection {
-    background-color: #10162f;
     height: 30vh;
     width: 100%;
     display: flex;
@@ -168,7 +166,7 @@
     height: 200px;
     padding: 10px;
     border: 1px solid #000;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: -4px 4px #000;
 }
 
@@ -187,7 +185,6 @@
 .teamSection {
     height: 80vh;
     width: auto;
-    background-color: #f5fcff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -257,7 +254,6 @@
 .promoteSection {
     height: 30vh;
     width: auto;
-    background-color: #f5fcff;
     display: flex;
     justify-content: center;
     align-items: center;

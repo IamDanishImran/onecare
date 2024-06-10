@@ -25,12 +25,12 @@
                 <div class="footerCol3 FooterCol">
                     <h3><a href="#">Company</a></h3>
                     <h4><a href="aboutus.php">About OneCare</a></h4>
-                    <h4><a href="#">News & Updates</a></h4>
+                    <h4><a href="newsroom.php">News & Updates</a></h4>
                 </div>
                 <div class="footerCol4 FooterCol">
-                    <div id="insta" class="iconMedia"><i class='bx bxl-instagram' ></i></div>
-                    <div id="facebook" class="iconMedia"><i class='bx bxl-facebook' ></i></div>
-                    <div id="pinterest" class="iconMedia"><i class='bx bxl-pinterest-alt' ></i></div>
+                    <div id="insta" class="iconMedia"><a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a></div>
+                    <div id="facebook" class="iconMedia"><a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a></div>
+                    <div id="pinterest" class="iconMedia"><a href="https://www.pinterest.com/"><i class='bx bxl-pinterest-alt'></i></a></div>
                 </div>
             </article>
             <article class="footerDown">
