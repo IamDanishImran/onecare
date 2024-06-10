@@ -18,7 +18,7 @@
                 <li><a href="#">Volunteers</a></li>
                 <li><a href="#">News & Updates</a></li>
                 <li><a href="mailto:imran24022004@gmail.com?subject=Contact Us Inquiry">Contact Us</a></li>
-                <li><button class="btn-sign">Sign Up</button></li>
+                <li><button class="btn-sign"><a href="signupVol.php">Sign Up</a></button></li>
             </ul>
             </div>
         </nav>
