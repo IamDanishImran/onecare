@@ -39,7 +39,7 @@
                     <p><a href="#" id="link">I forgot my password</a></p>
                 </div>
                 <div class="RowFive">
-                    <button class="backBtn Btn"><a href="#" id="link">Back</a></button>
+                    <button class="backBtn Btn"><a href="index.php" id="link">Back</a></button>
                 </div>
                 <div class="RowSix">
                     <p>Don't have an account yet? <span><a href="signupVol.php" id="link">Sign Up</a></span></p>

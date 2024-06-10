@@ -2,13 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT';
+    font-family: monospace;
 }
 
 /* First Page */
 .Container {
     width: auto;
-    background-color: #214170;
+    background-color: #3c3f52;
     align-items: center;
     justify-content: center;
     padding: 0px 10%;
@@ -113,7 +113,7 @@
 }
 
 .ThirdPageContainer {
-    background-color: #214170;
+    background-color: #304059;
     gap: 50px;
     height: 125vh;
 }

@@ -370,6 +370,10 @@
     transition: .2s;
 }
 
+#link {
+    color: #fff;
+}
+
 #btn-volunteer:hover {
     background-color: #3c3f52;
     border: 1px solid transparent;

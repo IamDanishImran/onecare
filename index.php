@@ -57,26 +57,29 @@
         <div id="content">
             <section id="container-A">
                 <article id="info">
-                    <h1>Know about e-learner Learning Platform</h1>
-                    <p>This is a temporary text for this paragraph. Perhaps it will be
-                        change soon once the copy writer make a new one. 
-                        Stay tune for our first website.</p>
+                    <h1>Know about OneCare Platform</h1>
+                    <p>Discover the heart and soul behind OneCare, your go-to destination for comprehensive 
+                        healthcare solutions and support services. In this space, we provide you 
+                        with an overview of who we are, what we stand for, and our mission to create meaningful 
+                        change and improve the lives of individuals and communities around Melacca. 
+                        Join us on our journey to a healthier, happier Melacca.
+                    </p>
                 </article>
                 <article class="bx-content">
                     <div class="bx-one bxAbout">
                         <div class="one bxColor"><h3>4M+</h3></div>
-                        <p>Students</p>
+                        <p>Users</p>
                     </div>
                     <div class="bx-two bxAbout">
                         <div class="two bxColor"><h3>4M+</h3></div>
-                        <p>Active Courses</p>
+                        <p>Volunteers</p>
                     </div>
                     <div class="bx-three bxAbout">
                         <div class="three bxColor"><h3>4M+</h3></div>
-                        <p>Free Courses</p>
+                        <p>Receiver</p>
                     </div>
                 </article>
-                <button class="btn-about">Learn More</button>
+                <button class="btn-about"><a href="aboutus.php" id="link">Learn More</a></button>
             </section>
             <section id="container-B">
                 <div class="bgImage">
@@ -93,7 +96,7 @@
             <br>
             <p>With your donations, we can develop a strong community support to our organization team member and volunteers</p>
             <br>
-            <button id="btn-donate">Donate Now</button>
+            <button id="btn-donate"><a href="donor.php" id="link">Donate Now</a></button>
         </section>
     </div>
 
@@ -146,7 +149,7 @@
             <br>
             <p>Welcome to OneCare, where we're dedicated to making a difference in Melaka. Join us in empowering our community through volunteering and support. Together, we can create positive change.</p>
             <br>
-            <button id="btn-volunteer">Join Us</button>
+            <button id="btn-volunteer"><a href="volunteer.php" id="link">Join Us</a></button>
         </section>
     </div>
     

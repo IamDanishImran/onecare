@@ -15,7 +15,7 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="aboutus.php">About Us</a></li>
                 <li><a href="donor.php">Donate</a></li>
-                <li><a href="#">Volunteers</a></li>
+                <li><a href="volunteer.php">Volunteers</a></li>
                 <li><a href="#">News & Updates</a></li>
                 <li><a href="mailto:imran24022004@gmail.com?subject=Contact Us Inquiry">Contact Us</a></li>
                 <li><button class="btn-sign"><a href="signupVol.php">Sign Up</a></button></li>
