@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: monospace;
+    scroll-behavior: smooth;
+}
+
+/* --------- Intro Section ---------- */
+.main {
+    height: 100vh;
+    width: auto;
+    padding: 0 10%;
+    background-color: #304059;
+}
+
+.intro  {
+    color: #fff;
+    width: 100%;
+}
+
+.intro h1 {
+    font-size: 50px;
+}
+
+#introTitle {
+    color: #2639ed;
+}
+
+.intro p {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.intro-Content {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.introImage img {
+    width: 450px;
+    height: 450px;
+}
