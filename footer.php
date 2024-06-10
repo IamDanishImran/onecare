@@ -13,17 +13,18 @@
         <footer class="footer">
             <article class="footerUp">
                 <div class="footerCol1 FooterCol">
-                    <h3><a href="signupVol.php">Become Member</a></h3>
-                    <h3><a href="feedback.php">Send Us Feedback</a></h3>
-                    <h3><a href="volunteer.php">Volunteers Platform</a></h3>
+                    <h3>Our Service</h3>
+                    <h4><a href="volunteer.php">Volunteers Platform</a></h4>
+                    <h4><a href="donor.php">Donation Platforms</a></h4>
                 </div>
                 <div class="footerCol2 FooterCol">
-                    <h3><a href="#">Help</a></h3>
-                    <h4><a href="#">Get Help</a></h4>
+                    <h3>Help</h3>
                     <h4><a href="mailto:imran24022004@gmail.com?subject=Contact Us Inquiry">Contact Us</a></h4>
+                    <h4><a href="tel:+60127917276">Call Us</a></h4>
+                    <h4><a href="feedback.php">Send Us Feedback</a></h4>
                 </div>
                 <div class="footerCol3 FooterCol">
-                    <h3><a href="#">Company</a></h3>
+                    <h3>Company</h3>
                     <h4><a href="aboutus.php">About OneCare</a></h4>
                     <h4><a href="newsroom.php">News & Updates</a></h4>
                 </div>
@@ -42,7 +43,7 @@
                         <p><a href="#">Terms of Use</a></p>
                     </div>
                     <div class="footerBox2">
-                        <p><a href="privacy.php">OneCare Privacy & Policy</a></p>
+                        <p><a href="privacy.php">Privacy & Policy</a></p>
                     </div>
                 </div>
             </article>

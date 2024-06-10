@@ -13,16 +13,18 @@
     height: 100vh;
     width: auto;
     padding: 0 10%;
-    background-color: #304059;
+    background-color: #fff0e5;
 }
 
 .intro  {
-    color: #fff;
+    color: #000000;
     width: 100%;
 }
 
 .intro h1 {
     font-size: 50px;
+    opacity: 0;
+    animation: fadeInAnimation .2s ease-in forwards;
 }
 
 #introTitle {
@@ -32,26 +34,14 @@
 .intro p {
     font-size: 15px;
     line-height: 20px;
+    opacity: 0;
+    animation: fadeInAnimation .2s ease-in forwards;
 }
 
-.BtnStart {
-    margin-top: 20px;
-    align-items: center;
-    font-weight: bold;
-    font-size: 18px;
-    width: 160px;
-    height: 45px;
-    color: #fff;
-    background-color: #2639ed;
-    box-shadow: -4px 4px #000;
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: .2s;
-}
-
-.BtnStart:hover {
-    box-shadow: -8px 8px #000;
-}
+.B-Start {
+    opacity: 0;
+    animation: fadeInAnimation .2s ease-in forwards;
+} 
 
 .intro-Content {
     display: flex;
@@ -64,6 +54,8 @@
     align-items: center;
     justify-content: center;
     width: 40%;
+    opacity: 0;
+    animation: fadeInAnimation .2s ease-in forwards;
 }
 
 .introImage img {
@@ -115,8 +107,8 @@
 }
 
 /* ----------- aboutus ----------- */
-#aboutus {
-    background-color: #fff;
+.aboutus {
+    background-color: #fff0e5;
     height: 120vh;
     width: auto;
     display: flex;
@@ -124,22 +116,22 @@
     justify-content: center;
 }
 
-#content {
+.content {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
 }
 
-#container-A {
+.container-A {
     width: 600px;
 }
 
-#info h1 {
+.info h1 {
     font-size: 38px;
 }
 
-#info p {
+.info p {
     padding: 10px 0px 10px 0px;
     font-size: 15px;
 }
@@ -183,25 +175,7 @@
     border-radius: 10px;
 }
 
-.btn-about {
-    align-items: center;
-    font-weight: bold;
-    font-size: 18px;
-    width: 160px;
-    height: 45px;
-    color: #fff;
-    background-color: #2639ed;
-    box-shadow: -4px 4px #000;
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: .2s;
-}
-
-.btn-about:hover {
-    box-shadow: -8px 8px #000;
-}
-
-#container-B {
+.container-B {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -229,58 +203,12 @@
     height: 450px;
 }
 
-/* ------------- Donation Section ------------ */
-#donation {
-    background-color: #fff;
-    width: auto;
-    height: 25vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#donation-section {
-    text-align: center;
-    padding: 10px;
-    background-color: #f1f1ff;
-    font-size: 18px;
-    border: 1px solid #000;
-    border-radius: 20px;
-    width: 1400px;
-}
-
-#donation-section h1 {
-    font-size: 30px;
-}
-
-#btn-donate {
-    padding: 10px 20px;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    align-items: center;
-    font-weight: bold;
-    font-size: 18px;
-    width: 160px;
-    height: 45px;
-    color: #fffae5;
-    background-color: #10162f;
-    border: 1px solid transparent;
-    cursor: pointer;
-    transition: .2s;
-}
-
-#btn-donate:hover {
-    background-color: #3c3f52;
-    border: 1px solid transparent;
-}
-
-
 /* --------------- Benefits Section --------------- */
 .benefits {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: #fff0e5;
     height: 100vh;
     width: auto;
 }
@@ -318,7 +246,7 @@
 }
 
 .TitleBene {
-    background-color: #f1f1ff;
+    background-color: #eafdc6;
     padding: 10px;
     font-size: 15px;
     border-radius: 5px;
@@ -329,56 +257,6 @@
     font-size: 15px;
 }
 
-/* --------- Volunteer Section ------------ */
-#volunteer {
-    background-color: #fff;
-    width: auto;
-    height: 35vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0px 20px 0px;
-}
-
-#volunteer-section {
-    text-align: center;
-    padding: 10px;
-    background-color: #f1f1ff;
-    font-size: 18px;
-    border: 1px solid #000;
-    border-radius: 20px;
-    width: 1400px;
-}
-
-#volunteer-section h1 {
-    font-size: 30px;
-}
-
-#btn-volunteer {
-    padding: 10px 20px;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    align-items: center;
-    font-weight: bold;
-    font-size: 18px;
-    width: 160px;
-    height: 45px;
-    color: #fffae5;
-    background-color: #10162f;
-    border: 1px solid transparent;
-    cursor: pointer;
-    transition: .2s;
-}
-
-#link {
-    color: #fff;
-}
-
-#btn-volunteer:hover {
-    background-color: #3c3f52;
-    border: 1px solid transparent;
-}
-
 /* -------------- News Section ------------ */
 .news {
     height: 80vh;
@@ -386,7 +264,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: #fff0e5;
 }
 
 .NewsColumn {
@@ -415,25 +293,6 @@
 
 .NewsTitle p {
     font-size: 15px;
-}
-
-.NewsButton {
-    margin-top: 20px;
-    align-items: center;
-    font-weight: bold;
-    font-size: 18px;
-    width: 160px;
-    height: 45px;
-    color: #fff;
-    background-color: #2639ed;
-    box-shadow: -4px 4px #000;
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: .2s;
-}
-
-.NewsButton:hover {
-    box-shadow: -8px 8px #000;
 }
 
 .NewsTwo {
@@ -478,4 +337,85 @@
 .grid-item:hover {
     box-shadow: -4px 4px #000;
     margin: 0px 0px 0px 0px;
+}
+
+/* --- Buttons & Links ---- */
+/* --- Blue Button --- */
+.Btn-Blue {
+    margin-top: 20px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    width: 160px;
+    height: 45px;
+    color: #fff;
+    background-color: #2639ed;
+    box-shadow: -4px 4px #000;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.Btn-Blue:hover {
+    box-shadow: -8px 8px #000;
+}
+
+/* --- Dark Button ---*/
+.Btn-Dark {
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    width: 160px;
+    height: 45px;
+    color: #fffae5;
+    background-color: #10162f;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.Btn-Dark:hover {
+    background-color: #3c3f52;
+    border: 1px solid transparent;
+}
+
+#link {
+    color: #fff;
+}
+
+/* ------------- Column Section ------------ */
+.columnInfo {
+    background-color: #fff0e5;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columnWrapper {
+    text-align: center;
+    padding: 10px;
+    background-color: #fffae5;
+    font-size: 18px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 1400px;
+}
+
+.columnWrapper h1 {
+    font-size: 30px;
+}
+
+/* ------ Animation ------ */
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

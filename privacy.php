@@ -36,9 +36,9 @@
                         <div class="DocumentWrapper">
                         <div class="title"><h3 id="titleOne">Last Update: 9 June 2024</h3></div>
                         <p><span>OneCare</span> and its Group Companies 
-                            (collectively, "RunCloud", "us", "we", or "our") operates 
-                            https://runcloud.io, https://blog.runcloud.io, https://manage.runcloud.io, https://runcloud.news and other subdomain 
-                            of runcloud.io (the "Sites", "Service" or "Services"). This page informs you ("user", "you", or "your") 
+                            (collectively, "OneCare", "us", "we", or "our") operates 
+                            https://OneCare.io, https://blog.OneCare.io, https://manage.OneCare.io, https://OneCare.news and other subdomain 
+                            of OneCare.io (the "Sites", "Service" or "Services"). This page informs you ("user", "you", or "your") 
                             our policies regarding the collection, use and disclosure of Personal Data 
                             ("Personal Data") we receive from users of the Sites. In this Privacy Policy, 
                             the term "Personal Data" means data relating to a living individual who is or 
@@ -46,7 +46,7 @@
                             other information that is in, or is likely to come into, our possession, and 
                             includes personal data as described in Data Protection Legislation 
                             (as defined below).Please read the following carefully. Registering for a 
-                            RunCloud account ("Your Account"), use of Your Account and accepting the terms 
+                            OneCare account ("Your Account"), use of Your Account and accepting the terms 
                             of this Privacy Policy indicates that you have reviewed this Privacy Policy and 
                             have agreed to be bound by it. You will be required to expressly accept this 
                             Privacy Policy before registering Your Account (or before continuing to use the 

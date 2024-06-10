@@ -22,7 +22,7 @@
                 <p>This is temporary text in a single paragraph. Perhaps it will be
                     change soon before we launch the websites, thank you.
                 </p>
-                <button class="BtnStart">Get Started</button>
+                <button class="Btn-Blue B-Start"><a href="signupVol.php" id="link">Get Started</a></button>
             </section>
             <section class="introImage">
                 <img src="media/teamIllustrator.png" alt="Intro-illustration">
@@ -52,11 +52,11 @@
     </div>
 
     <!-- About Us Section -->
-    <section id="aboutus">
-        <div id="content">
-            <section id="container-A">
-                <article id="info">
-                    <h1>Know about OneCare Platform</h1>
+    <section class="aboutus">
+        <div class="content">
+            <section class="container-A">
+                <article class="info">
+                    <h1>Know about OneCare platform</h1>
                     <p>Discover the heart and soul behind OneCare, your go-to destination for comprehensive 
                         healthcare solutions and support services. In this space, we provide you 
                         with an overview of who we are, what we stand for, and our mission to create meaningful 
@@ -78,9 +78,9 @@
                         <p>Receiver</p>
                     </div>
                 </article>
-                <button class="btn-about"><a href="aboutus.php" id="link">Learn More</a></button>
+                <button class="Btn-Blue B-About"><a href="aboutus.php" id="link">Learn More</a></button>
             </section>
-            <section id="container-B">
+            <section class="container-B">
                 <div class="bgImage">
                     <div><img src="media/profile.jpg" alt="" id="person"></div>
                 </div>
@@ -89,13 +89,13 @@
     </section>
 
     <!-- Donation Section -->
-    <div id="donation">
-        <section id="donation-section">
+    <div class="columnInfo donation">
+        <section class="columnWrapper donation-section">
             <h1>Join Our OneCare Donation</h1>
             <br>
             <p>With your donations, we can develop a strong community support to our organization team member and volunteers</p>
             <br>
-            <button id="btn-donate"><a href="donor.php" id="link">Donate Now</a></button>
+            <button class="Btn-Dark B-Donate"><a href="donor.php" id="link">Donate Now</a></button>
         </section>
     </div>
 
@@ -141,14 +141,14 @@
         </div>
     </section>
     
-    <!-- Volunteer Section -->
-    <div id="volunteer">
-        <section id="volunteer-section">
+        <!-- Volunteer Section -->
+        <div class="columnInfo volunteer">
+        <section class="columnWrapper volunteer-section">
             <h1>Join us to unlock opportunities in fighting poverty.</h1>
             <br>
-            <p>Welcome to OneCare, where we're dedicated to making a difference in Melaka. Join us in empowering our community through volunteering and support. Together, we can create positive change.</p>
+            <p>Welcome to OneCare, where we're dedicated to making a difference in Melacca. Join us in empowering our community through volunteering and support. Together, we can create positive change.</p>
             <br>
-            <button id="btn-volunteer"><a href="volunteer.php" id="link">Join Us</a></button>
+            <button class="Btn-Dark B-Volunteer"><a href="volunteer.php" id="link">Join Us</a></button>
         </section>
     </div>
     
@@ -157,13 +157,13 @@
         <div class="NewsColumn">
             <article class="NewsOne">
                 <div class="NewsTitle">
-                    <h3>News & Update</h3>
+                    <h3>News & Updates</h3>
                     <p>Get the latest news and updates from OneCare, including our impact and 
                         community initiatives. Join us in making a difference!
                     </p>
                 </div>
                 <div class="NewsBtn">
-                    <button class="NewsButton">Learn More</button>
+                    <button class="Btn-Blue B-News"><a href="newsroom.php" id="link">Learn More</a></button>
                 </div>
             </article>
             <article class="NewsTwo">
@@ -195,7 +195,3 @@
     <?php include 'footer.php'; ?>
 </body>
 </html>
-
-<!-- Notes: -->
-<!-- 1. Need to make the header responsive to devices such as Phone, Tablet and Laptop -->
-<!-- 2. Have to make buttons and any links consistence in styling. -->

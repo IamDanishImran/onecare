@@ -12,7 +12,7 @@
     height: 100vh;
     width: auto;
     padding: 0 10%;
-    background-color: #304059;
+    background-color: #fff0e5;
 }
 
 .intro-Content {
@@ -23,7 +23,7 @@
 }
 
 .intro  {
-    color: #fff;
+    color: #000000;
     width: 60%;
 }
 

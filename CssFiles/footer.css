@@ -19,6 +19,8 @@
 
 .FooterCol h3 {
     padding: 10px;
+    color: #fff;
+    font-weight: bold;
 }
 
 .FooterCol h4 {
@@ -27,9 +29,14 @@
 }
 
 .FooterCol a {
-    color: #fff;
+    color: #c5c5c5;
     font-size: 15px;
     text-decoration: none;
+    transition: .2s;
+}
+
+.FooterCol a:hover {
+    color: #ffffff;
 }
 
 .footerDown {
@@ -51,7 +58,6 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: transparent;
     border: 3px solid #fff;
     margin-left: 10px;
     display: flex;
@@ -66,6 +72,7 @@
 .iconMedia i {
     color: #ffffff;
     font-size: 20px;
+    margin-top: 4px;
 }
 
 .footerCol5, .footerCol6 {
@@ -79,7 +86,8 @@
 }
 
 .footerCol6 {
-    width: 25%;
+    margin-left: 100px;
+    width: 20%;
 }
 
 .footerBox1, .footerBox2 {

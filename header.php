@@ -14,7 +14,7 @@
             <ul id="nav-links">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="aboutus.php">About Us</a></li>
-                <li><a href="donor.php">Donate</a></li>
+                <li><a href="donor.php">Donations</a></li>
                 <li><a href="volunteer.php">Volunteers</a></li>
                 <li><a href="newsroom.php">News & Updates</a></li>
                 <li><a href="mailto:imran24022004@gmail.com?subject=Contact Us Inquiry">Contact Us</a></li>
