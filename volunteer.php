@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="CssFiles/volunteer.css">
 </head>
 <body>
-
     <section class="Container">
+    <?php include 'header.php'; ?>
      <!-- Intro Section -->
         <section class="FirstPageContainer">
-
+        
             <div class="section-text">
                 <div class="RowOne">
                     <h1>Join a dedicated</h1>
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="section-image">
-                <img src="/images/BukitBintang.jpg" alt="Volunteer pictures">
+                <img src="media/volunteerpics.png" alt="Volunteer pictures">
             </div>
         </section>
     </section>
@@ -41,17 +41,19 @@
                     <p>fighting poverty. By joining us, you can contribute to meaningful impact and</p>
                     <p>support those in need, enabling our community to thrive.</p>
                 </div>
-            <div class="RowThree">
-                <p>Powering</p>
-                <h1>200</h1>
-                <p>Volunteers</p>
-            </div>
-            
-            <div class="RowFour">
-                <p>Powering</p>
-                <h1>70</h1>
-                <p>Places</p>
-            </div>
+                <div class="RowWrapper">
+                <div class="RowThree">
+                    <p>Powering</p>
+                    <h1>200</h1>
+                    <p>Volunteers</p>
+                </div>
+                
+                <div class="RowFour">
+                    <p>Powering</p>
+                    <h1>70</h1>
+                    <p>Places</p>
+                </div>
+                </div>
 
             </div>
         </section>
@@ -77,7 +79,7 @@
 
                     <div class="places-container">
                         <div class="places">
-                            <img src="/images/kampung1.jpg" alt="kampungsatu">
+                            <img src="media/kampung1.png" alt="kampungsatu">
                             <h3>Kampung Haji Anuar</h3>
                             <p><strong>Main Requirement</strong></p>
                             <ul>
@@ -89,13 +91,14 @@
                             <button>Join</button>
                         </div>
 
+
                         <div class="places">
-                            <img src="/images/kampung2.jpg" alt="kampungdua">
+                            <img src="media/kampung2.png" alt="kampungdua">
                             <h3>Kampung Haji Abdul</h3>
                             <p><strong>Main Requirement</strong></p>
                             <ul>
-                                <li> - Need Volunteering Energy</li>
-                                <li> - Need Cleaning Tools</li>
+                                <li> Need Volunteering Energy</li>
+                                <li> Need Cleaning Tools</li>
                             </ul>
                             <p><strong>Address:</strong> Jalan Haji Abdul 89, Ayer Keroh, Melaka</p>
                             <p><strong>On Duty:</strong> 12/08/2024</p>
@@ -103,7 +106,7 @@
                         </div>
 
                         <div class="places">
-                            <img src="/images/kampung3.jpg" alt="kampungtiga">
+                            <img src="media/kampung3.png" alt="kampungtiga">
                             <h3>Kampung Ali Rostam</h3>
                             <p><strong>Main Requirement</strong></p>
                             <ul>

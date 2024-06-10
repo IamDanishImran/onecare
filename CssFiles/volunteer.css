@@ -5,19 +5,19 @@
     font-family: 'Gill Sans', 'Gill Sans MT';
 }
 
-
 /* First Page */
 .Container {
+    width: auto;
+    background-color: #214170;
     align-items: center;
     justify-content: center;
-    padding: 1px;
+    padding: 0px 10%;
 }
 
 .FirstPageContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #214170;
     gap: 50px;
     height: 100vh;
 }
@@ -56,21 +56,21 @@
 
 /* Second Page */
 .Container-statistic {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
     justify-content: center;
-    padding: 1px;
+    padding: 10px;
+    background-color: #fff;
 }
 
 .SecondPageContainer {
-    background-color: #e7e7e7;
     display: flex;
-    gap: 50px;
-    height: auto;
-}
-
-.statisticvolunteer {
+    align-items: center;
     justify-content: center;
-    padding: 135px;
+    height: auto;
+    padding: 20px;
 }
 
 .statisticvolunteer .RowOne h1{
@@ -85,16 +85,25 @@
     font-size: 18px;
 }
 
-.statisticvolunteer .RowThree {
-    background-color: transparent;
-    padding-top: 20px;
+.RowWrapper {
+    padding: 40px 0px;
+    display: flex;
+    align-items: center;
 }
 
-.statisticvolunteer .RowFour {
-    background-color: transparent;
-    padding-top: 20px;
+.RowThree,
+.RowFour {
+    font-size: 20px;
 }
 
+.RowFour {
+    margin-left: 30px;
+}
+
+.RowThree h1,
+.RowFour h1 {
+    font-size: 35px;
+}
 
 /* Third Page */
 .Container-opportunities {
@@ -114,10 +123,11 @@
     padding-bottom: 13px;
     padding-top: 50px;
     color: #ffffff;
+    font-size: 30px;
 }
 
 .opportunitiesvolunteer .RowOne p {
-    color: #fff;
+    color: #ffffff;
     margin-top: 5px;
     text-align: center;
     font-size: 18px;
@@ -204,7 +214,7 @@
 }
 
 .places button {
-    background-color: #4e73df;
+    background-color: #091766;
     color: white;
     border: none;
     border-radius: 5px;
@@ -214,7 +224,7 @@
 }
 
 .places button:hover {
-    background-color: #3a5bbb;
+    background-color: #0069d9;
 }
 
 
@@ -224,18 +234,16 @@
     justify-content: center;
     padding-top: 100px;
     padding: 120px;
-    background-color: #e7e7e7;
+    background-color: #ffffff;
 }
 
 .FourthPageContainer {
-    background-color: #e7e7e7;
-    gap: 50px;
     height: auto;
 }
 
 .userfeedback {
-    background-color: #e7e7e7;
-    color: #001ec9;
+    background-color: #f1f1ff;
+    color: #10162f;
     padding-top: 30px;
     border: 2px solid #000000;
     border-radius: 25px;
@@ -245,18 +253,20 @@
     text-align: center;
 }
 .userfeedback .Border h1{
-    padding-bottom: 25px;
+    padding-bottom: 22px;
     text-align: center;
+    font-size: 30px;
 }
 
 .userfeedback .Border p{
     padding-bottom: 0px;
     text-align: center;
+    font-size: 18px;
 }
 
 
 .userfeedback .Border button {
-    background-color: #001ec9;
+    background-color: #091766;
     margin-top: 20px;
     margin-bottom: 20px;
     color: white;
