@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: monospace;
+    scroll-behavior: smooth;
+}
+
+/* Main Section */
+.main {
+    height: 70vh;
+    width: auto;
+    padding: 0 10%;
+    background-color: #304059;
+}
+
+.intro-Content {
+    padding-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.intro {
+    color: #fff;
+    width: 60%;
+    flex: 1;
+    min-width: 300px;
+}
+
+.intro h1 {
+    font-size: 50px;
+}
+
+#introTitle {
+    color: #2639ed;
+}
+
+.intro p {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.BtnStart {
+    margin-top: 20px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    width: 160px;
+    height: 45px;
+    color: #fff;
+    background-color: #2639ed;
+    box-shadow: -4px 4px #000;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.BtnStart:hover {
+    box-shadow: -8px 8px #000;
+}
+
+.introImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    flex: 1;
+    min-width: 300px;
+}
+
+.introImage img {
+    width: 50%;
+    height: auto;
+}
+
+/* Boxes Section */
+.boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.boxGroup {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.boxGroup.single {
+    justify-content: center;
+}
+
+.box {
+    background-color: #ffffff;
+    width: 400px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #000000;
+}
+
+.box h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.box p {
+    font-size: 15px;
+}
+
+/* Aid Form Styles */
+.aid-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.aid-form label {
+    margin: 5px 0;
+}
+
+.aid-form input,
+.aid-form select,
+.aid-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.aid-form button {
+    margin-top: 10px;
+    width: 100%;
+}
