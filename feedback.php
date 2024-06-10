@@ -1,12 +1,13 @@
 <html>
     <head>
-        <link rel="stylesheet" href="feedback.css"></link>
+        <link rel="stylesheet" href="CssFiles/feedback.css"></link>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <title>Feedback</title>
     </head>
     <body>
         <section class="sec-1">
             <div class="div-1">
-                <img src="image/Charity-cuate.png" alt="">
+                <img src="media/Charity-cuate.png" alt="">
             </div>
             <div class="div-2">
                 <div class="div-2-form">
@@ -37,11 +38,19 @@
                             <button class="submitBtn-Btn">submit</button>
                         </div>
                         <div class="back-form">
-                            <button class="backBtn-Btn">back</button>
+                            <button class="backBtn-Btn"><a href="index.php">back</a></button>
                         </div>
                     </form>
                 </div>
             </div>
         </section>
+        <script>
+        $(document).ready(function() {
+            $(".submitBtn-Btn").click(function() {
+                alert("Your Feedback submitted")
+            })
+        });
+        
+        </script>
     </body>
 </html>
