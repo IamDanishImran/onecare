@@ -9,7 +9,7 @@
 <body>
     <header class="headerMain">
         <nav>
-            <div class="logo"><h2>OneCare</h2></div>
+            <div class="logo"><h2 id="logo">OneCare</h2></div>
             <div class="navMenu">
             <ul id="nav-links">
                 <li><a href="index.php">Home</a></li>
