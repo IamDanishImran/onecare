@@ -36,7 +36,7 @@
             </article>
             <article class="footerDown">
                 <div class="footerCol5">
-                    <span id="location"><a href="#">Malaysia &copy;2024 OneCare, Inc All Right Reserved</a></span>
+                    <span id="location"><a href="https://www.google.com/maps/dir/2.2208667,102.2827032/google+map+magic+cyberjaya/@2.6457057,101.322881,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x31cdb6f75df70747:0x63a65b984b6615db!2m2!1d101.657014!2d2.926398?entry=ttu">Malaysia &copy;2024 OneCare, Inc All Right Reserved</a></span>
                 </div>
                 <div class="footerCol6">
                     <div class="footerBox1">

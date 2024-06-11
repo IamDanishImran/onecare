@@ -1,3 +1,43 @@
+<?php
+include 'connect.php';
+session_start();
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $vol_username = mysqli_real_escape_string($condb, $_POST['username']);
+    $vol_password = mysqli_real_escape_string($condb, $_POST['password']);
+    $user         = "volunteer";
+
+    if (empty($vol_username) || empty($vol_password)) {
+        echo "<script>alert('Please fill the form')</script>";
+    } else {
+
+        $login_command = "SELECT * FROM $user
+                          WHERE name = ? AND password = ? LIMIT 1";
+        
+        $stmt = mysqli_prepare($condb, $login_command);
+        mysqli_stmt_bind_param($stmt, "ss", $vol_username, $vol_password);
+        mysqli_stmt_execute($stmt);
+        $result = mysqli_stmt_get_result($stmt);
+
+        if(mysqli_num_rows($result) == 1) {
+            $data = mysqli_fetch_assoc($result);
+            $_SESSION['register_vol'] = true;
+            $_SESSION['username'] = $data['username']; // Assuming 'username' is the correct column name for username
+            $_SESSION['password'] = $data['password']; // Assuming 'password' is the correct column name for password
+            echo "<script>alert('Login Success!');
+                  window.location.href = 'index.php';</script>";
+        } else {
+            $_SESSION['register_vol'] = false;
+            echo "<script>alert('Login Failed!.');
+                  window.history.back();</script>";
+        }
+    }
+    mysqli_close($condb);
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +49,7 @@
 </head>
 <body>
     <section class="loginSection">
-        <form action="#">
+        <form action="signinVol.php" method="POST">
             <div class="loginForm">
                 <div class="loginTitle">
                     <h2>OneCare</h2>
@@ -18,21 +58,14 @@
                 </div>
                 <div class="RowOne RowInput">
                     <label for="username">Full Name</label>
-                    <input type="text" id="username">
+                    <input type="text" id="username" name="username" required>
                 </div>
                 <div class="RowTwo RowInput">
                     <label for="password">Password</label>
-                    <input type="password" id="password">
+                    <input type="password" id="password" name="password" required>
                 </div>
-
-                <!-- Error Section -->
-                <div class="Error">
-                    <p id="errorText"></p>
-                </div>
-                <!------------------->
-
                 <div class="RowThree">
-                    <button class="signinBtn Btn"><a href="#" id="link">Sign In</a></button>
+                    <button type="submit" class="signinBtn Btn">Sign In</button>
                     <button class="signinReceiver Btn"><a href="#" id="link">Sign In as Receiver</a></button>
                 </div>
                 <div class="RowFour">
@@ -47,6 +80,5 @@
             </div>
         </form>
     </section>
-    <script src="Javascript/register.js"></script>
 </body>
 </html>

@@ -1,13 +1,16 @@
 <?php
-$servername = "localhost:3306";
-$username = "root";
-$password = "abc123"; 
-$dbname = "onecare";
 
-// Create Connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$name_host = "localhost";
+$user_sql = "root";
+$pass_sql = "abc123";
+$name_db = "onecare";
 
-if ($conn -> connect_error) {
-    die("Connection Failed: ". $conn -> connect_error);
-};
+$condb = mysqli_connect($name_host, $user_sql, $pass_sql, $name_db);
+
+if (!$condb) {
+    die("Connection failed: " . mysqli_connect_error());
+} else {
+    # echo "Connection successful";
+}
+
 ?>

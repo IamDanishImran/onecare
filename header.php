@@ -11,15 +11,32 @@
         <nav>
             <div class="logo"><h2 id="logo">OneCare</h2></div>
             <div class="navMenu">
-            <ul id="nav-links">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="aboutus.php">About Us</a></li>
-                <li><a href="donor.php">Donations</a></li>
-                <li><a href="volunteer.php">Volunteers</a></li>
-                <li><a href="newsroom.php">News & Updates</a></li>
-                <li><a href="mailto:imran24022004@gmail.com?subject=Contact Us Inquiry">Contact Us</a></li>
-                <li><button class="btn-sign"><a href="signupVol.php">Sign Up</a></button></li>
-            </ul>
+                <ul id="nav-links">
+                    <!-- PHP Session --->
+                     <?php
+                     session_start();
+                     // Check if user is logged in
+                     if (isset($_SESSION['register_vol']) && $_SESSION['register_vol'] === true) {
+                        
+                        echo '<li><a href="index.php">Home</a></li>
+                              <li><a href="aboutus.php">About Us</a></li>
+                              <li><a href="donor.php">Donations</a></li>
+                              <li><a href="volunteer.php">Volunteers</a></li>
+                              <li><a href="newsroom.php">News & Updates</a></li>
+                              <li><a href="mailto:imran24022004@gmail.com?subject=Contact Us Inquiry">Contact Us</a></li>
+                              <li><button class="btn-sign"><a href="profile.php">Profile</a></button></li>';
+                            
+                    } else {
+                        echo '<li><a href="index.php">Home</a></li>
+                              <li><a href="aboutus.php">About Us</a></li>
+                              <li><a href="donor.php">Donations</a></li>
+                              <li><a href="volunteer.php">Volunteers</a></li>
+                              <li><a href="newsroom.php">News & Updates</a></li>
+                              <li><a href="mailto:imran24022004@gmail.com?subject=Contact Us Inquiry">Contact Us</a></li>
+                              <li><button class="btn-sign"><a href="signupVol.php">Sign Up</a></button></li>';
+                           }
+                    ?>
+                </ul>
             </div>
         </nav>
     </header>
