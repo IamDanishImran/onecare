@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: monospace;
+    scroll-behavior: smooth;
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.control-panel {
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+    display: block;
+}
+
+.title-panel {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.block {
+    background-color: #fff;
+    width: 1200px;
+    max-height: 280px;
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    overflow-y: auto; 
+}
+
+.volunteer-info {
+    padding: 10px;
+}
+
+.volWrapper {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
