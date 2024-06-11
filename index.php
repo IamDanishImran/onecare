@@ -52,6 +52,29 @@
     </div>
 
     <!-- About Us Section -->
+    <?php
+    // include connect file
+    include 'connect.php';
+    // Query to get counts
+    $query = "SELECT 
+    (SELECT COUNT(*) FROM volunteer) AS volunteer_count,
+    (SELECT COUNT(*) FROM receiver) AS receiver_count,
+    (SELECT COUNT(*) FROM volunteer) + (SELECT COUNT(*) FROM receiver) AS total_count";
+    
+    $result = mysqli_query($condb, $query);
+    if ($result) {
+        $counts = mysqli_fetch_assoc($result);
+        $volunteer_count = $counts['volunteer_count'];
+        $receiver_count = $counts['receiver_count'];
+        $total_count = $counts['total_count'];
+    } else {
+        echo "Error: " . mysqli_error($condb);
+    }
+    
+    // Close the connection
+    mysqli_close($condb);
+    ?>
+
     <section class="aboutus">
         <div class="content">
             <section class="container-A">
@@ -65,18 +88,18 @@
                     </p>
                 </article>
                 <article class="bx-content">
-                    <div class="bx-one bxAbout">
-                        <div class="one bxColor"><h3>4M+</h3></div>
-                        <p>Users</p>
-                    </div>
-                    <div class="bx-two bxAbout">
-                        <div class="two bxColor"><h3>4M+</h3></div>
-                        <p>Volunteers</p>
-                    </div>
-                    <div class="bx-three bxAbout">
-                        <div class="three bxColor"><h3>4M+</h3></div>
-                        <p>Receiver</p>
-                    </div>
+                <div class="bx-one bxAbout">
+                    <div class="one bxColor"><h3><?php echo $total_count ?></h3></div>
+                    <p>Total Users</p>
+                </div>
+                <div class="bx-two bxAbout">
+                    <div class="two bxColor"><h3><?php echo $volunteer_count ?></h3></div>
+                    <p>Volunteers</p>
+                </div>
+                <div class="bx-three bxAbout">
+                    <div class="three bxColor"><h3><?php echo $receiver_count ?></h3></div>
+                    <p>Receivers</p>
+                </div>
                 </article>
                 <button class="Btn-Blue B-About"><a href="aboutus.php" id="link">Learn More</a></button>
             </section>
@@ -87,6 +110,7 @@
             </section>
         </div>
     </section>
+
 
     <!-- Donation Section -->
     <div class="columnInfo donation">

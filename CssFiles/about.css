@@ -25,6 +25,7 @@
 .intro  {
     color: #000000;
     width: 60%;
+    animation: fadeInAnimation .2s ease-in forwards;
 }
 
 .intro h2 {
@@ -49,6 +50,7 @@
     align-items: center;
     justify-content: center;
     width: 40%;
+    animation: fadeInAnimation .2s ease-in forwards;
 }
 
 .introImage img {
@@ -303,4 +305,14 @@
 
 .link:hover {
     color: #6b79fc;
+}
+
+/* ------ Animation ------ */
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
