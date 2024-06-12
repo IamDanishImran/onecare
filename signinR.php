@@ -9,26 +9,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (empty($rec_fullname) || empty($rec_password)) {
         echo "<script>alert('Please fill the form')</script>";
     } else {
-
-        $login_command = "SELECT * FROM receiver
-                          WHERE name = ? AND password = ? LIMIT 1";
+        $login_command = "SELECT * FROM receiver WHERE name = ? AND password = ? LIMIT 1";
         
+        # prepare the SQL statement
         $stmt = mysqli_prepare($condb, $login_command);
+        # Bind parameter to the prepared statement
         mysqli_stmt_bind_param($stmt, "ss", $rec_fullname, $rec_password);
+        # Execute the prepared statement
         mysqli_stmt_execute($stmt);
+        # Get result set from executed statement
         $result = mysqli_stmt_get_result($stmt);
 
-        if(mysqli_num_rows($result) == 1) {
+        if (mysqli_num_rows($result) == 1) {
+            # Fetch the next row from the result set as an associative array
             $data = mysqli_fetch_assoc($result);
             $_SESSION['register_rec'] = true;
-            $_SESSION['fullname'] = $data['fullname'];
+            $_SESSION['fullname'] = $data['name'];
             $_SESSION['password'] = $data['password'];
-            echo "<script>alert('Login Success!');
-                  window.location.href = 'index.php';</script>";
+            echo "<script>alert('Login Success!'); window.location.href = 'index.php';</script>";
         } else {
             $_SESSION['register_rec'] = false;
-            echo "<script>alert('Login Failed!.');
-                  window.history.back();</script>";
+            echo "<script>alert('Login Failed!'); window.history.back();</script>";
         }
     }
     mysqli_close($condb);
@@ -54,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <p>Ready to access your account? Login first.</p>
                 </div>
                 <div class="row3">
-                <img src="media/registerR.png" alt="signin-receiver-image">
+                    <img src="media/registerR.png" alt="signin-receiver-image">
                 </div>
                 <div class="row4"><button class="backBtn"><a href="index.php">Back</a></button></div>
             </article>
@@ -65,14 +66,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
                 <div class="input fullname">
                     <label for="fullname">Full Name</label>
-                    <input type="text" name="fullname">
+                    <input type="text" name="fullname" required>
                 </div>
                 <div class="input password">
                     <label for="password">Password</label>
-                    <input type="text" name="password">
+                    <input type="password" name="password" required>
                 </div>
                 <div class="Wrap">
-                    <button class="Btn"><a href="">Sign In</a></button>
+                    <button type="submit" class="Btn">Sign In</button>
                     <button class="Btn"><a href="signinVol.php">Sign In as Volunteer</a></button>
                     <p>Don't have account yet? <a href="signupR.php">Sign Up</a></p>
                 </div>
