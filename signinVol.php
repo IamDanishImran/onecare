@@ -5,13 +5,12 @@ session_start();
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $vol_username = mysqli_real_escape_string($condb, $_POST['username']);
     $vol_password = mysqli_real_escape_string($condb, $_POST['password']);
-    $user         = "volunteer";
 
     if (empty($vol_username) || empty($vol_password)) {
         echo "<script>alert('Please fill the form')</script>";
     } else {
 
-        $login_command = "SELECT * FROM $user
+        $login_command = "SELECT * FROM volunteer
                           WHERE name = ? AND password = ? LIMIT 1";
         
         $stmt = mysqli_prepare($condb, $login_command);
@@ -22,8 +21,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if(mysqli_num_rows($result) == 1) {
             $data = mysqli_fetch_assoc($result);
             $_SESSION['register_vol'] = true;
-            $_SESSION['username'] = $data['username']; // Assuming 'username' is the correct column name for username
-            $_SESSION['password'] = $data['password']; // Assuming 'password' is the correct column name for password
+            $_SESSION['username'] = $data['username'];
+            $_SESSION['password'] = $data['password'];
             echo "<script>alert('Login Success!');
                   window.location.href = 'index.php';</script>";
         } else {
@@ -66,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
                 <div class="RowThree">
                     <button type="submit" class="signinBtn Btn">Sign In</button>
-                    <button class="signinReceiver Btn"><a href="#" id="link">Sign In as Receiver</a></button>
+                    <button class="signinReceiver Btn"><a href="signinR.php" id="link">Sign In as Receiver</a></button>
                 </div>
                 <div class="RowFour">
                     <p><a href="#" id="link">I forgot my password</a></p>

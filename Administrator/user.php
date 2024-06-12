@@ -27,10 +27,10 @@ $result = mysqli_query($condb, $sql);
 
 if (mysqli_num_rows($result) > 0) {
     // Output data of each row
-    echo "<div class='volunteer-info'>";
+    echo "<div class='info'>";
     while($row = mysqli_fetch_assoc($result)) {
-      echo "<div class='volWrapper'>";
-        echo "<p>ID: ".$row["VolunteerID"]. "&nbsp</p><p>|&nbsp;Name: ".$row["name"]."&nbsp</p><p>|&nbsp;Password: ".$row["password"]."</p>" . "&nbsp;<button>Drop</button>";
+      echo "<div class='Wrapper'>";
+        echo "<p>ID: ".$row["VolunteerID"]. "&nbsp</p><p>|&nbsp;Name: ".$row["name"]."&nbsp</p><p>|&nbsp;Password: ".$row["password"]."</p>" . "&nbsp;<button>Delete</button>";
         echo "</div>";
     }
     echo "</div>";
@@ -56,9 +56,9 @@ $result = mysqli_query($condb, $sql);
 
 if (mysqli_num_rows($result) > 0) {
     // Output data of each row
-    echo "<div class='volunteer-info'>";
+    echo "<div class='info'>";
     while($row = mysqli_fetch_assoc($result)) {
-      echo "<div class='volWrapper'>";
+      echo "<div class='Wrapper'>";
         echo "<p>ID: ".$row["VolunteerID"]. "&nbsp</p><p>|&nbsp;Name: ".$row["name"]."&nbsp</p><p>|&nbsp;Password: ".$row["password"]."</p>" . "&nbsp;<button>Drop</button>";
         echo "</div>";
     }

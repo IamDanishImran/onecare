@@ -67,6 +67,16 @@
                             be amended, revised or replaced from time to time, including 
                             California Consumer Privacy Act of 2018 (CCPA).
                         </p>
+                        
+                        <div class="title">
+                            <h3 id="titleThree">1. Information Collection And Use</h3>
+                        </div>
+                        <p>Our Sites collect information that identifies, relates to, describes, references, 
+                            is capable of being associated with, or could reasonably be linked, directly or 
+                            indirectly, with a particular consumer or device (“personal information”). 
+                            In particular, our Sites have collected the following categories of personal 
+                            information from its consumers within the last twelve (12) months:
+                        </p>
                         </div>
                     </div>
                 </article>

@@ -9,8 +9,8 @@
 }
 
 body {
-  max-width: 100%;
-  overflow-x: hidden;
+  height: 100vh;
+  width: 100%;
 }
 
 .SignUpSection {
@@ -33,6 +33,8 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  opacity: 0;
+  animation: fadeInAnimation ease-in .2s forwards;
 }
 
 .SignUpTitle {
@@ -166,4 +168,13 @@ input {
 
 .RowSeven #link:hover {
   color: #3a10e5;
+}
+
+/* Animation */
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
 }

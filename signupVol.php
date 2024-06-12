@@ -85,7 +85,7 @@ if (!empty($_POST)) {
 
                 <div class="RowFour">
                     <button type="submit" class="signupBtn Btn">Sign Up</button>
-                    <button class="signinReceiver Btn"><a href="signupReceiver.php" id="link">Sign Up as Receiver</a></button>
+                    <button class="signinReceiver Btn"><a href="signupR.php" id="link">Sign Up as Receiver</a></button>
                 </div>
                 <div class="RowSix">
                     <button class="backBtn Btn"><a href="index.php" id="link">Back</a></button>

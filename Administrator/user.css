@@ -16,10 +16,12 @@
 
 .control-panel {
     height: 100vh;
-    width: 100%;
+    width: auto;
     background-color: #ffffff;
     padding: 10px;
     display: block;
+    align-items: center;
+    justify-content: center;
 }
 
 .title-panel {
@@ -38,11 +40,11 @@
     overflow-y: auto; 
 }
 
-.volunteer-info {
+.info {
     padding: 10px;
 }
 
-.volWrapper {
+.Wrapper {
     font-size: 15px;
     display: flex;
     align-items: center;

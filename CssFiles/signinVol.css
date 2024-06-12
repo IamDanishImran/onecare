@@ -33,6 +33,8 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  opacity: 0;
+  animation: fadeInAnimation ease-in .2s forwards;
 }
 
 .loginTitle {
@@ -172,4 +174,13 @@ span a {
 
 .RowFour #link:hover, .RowSix #link:hover {
   color: #3a10e5;
+}
+
+/* Animation */
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
 }

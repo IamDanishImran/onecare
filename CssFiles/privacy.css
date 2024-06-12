@@ -9,7 +9,7 @@
     height: 50vh;
     width: auto;
     padding: 0 10%;
-    background-color: #304059;
+    background-color: #fff0e5;
 }
 
 .IntroSection {
@@ -18,7 +18,7 @@
     justify-content: center;
     align-items: center;
     font-size: 55px;
-    color: #fff;
+    color: #000000;
 }
 
 /*----- Document Section --------- */
@@ -91,6 +91,7 @@
 .DocumentWrapper {
     width: 100%;
     padding: 10px;
+    background-color: grey;
 }
 
 .DocumentWrapper p {
@@ -110,4 +111,9 @@
 
 .DocumentWrapper span {
     font-weight: bold;
+}
+
+.title #titleThree {
+    font-size: 25px;
+    margin-top: 15px;
 }

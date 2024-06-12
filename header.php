@@ -26,7 +26,17 @@
                               <li><a href="mailto:imran24022004@gmail.com?subject=Contact Us Inquiry">Contact Us</a></li>
                               <li><button class="btn-sign"><a href="profile.php">Profile</a></button></li>';
                             
+                    } else if (isset($_SESSION['register_rec']) && $_SESSION['register_rec'] === true) {
+
+                        echo '<li><a href="index.php">Home</a></li>
+                        <li><a href="aboutus.php">About Us</a></li>
+                        <li><a href="receiver.php">Receiver</a></li>
+                        <li><a href="newsroom.php">News & Updates</a></li>
+                        <li><a href="mailto:imran24022004@gmail.com?subject=Contact Us Inquiry">Contact Us</a></li>
+                        <li><button class="btn-sign"><a href="profile.php">Profile</a></button></li>';
+
                     } else {
+
                         echo '<li><a href="index.php">Home</a></li>
                               <li><a href="aboutus.php">About Us</a></li>
                               <li><a href="donor.php">Donations</a></li>

@@ -205,7 +205,7 @@
                     <div class="PromoteBox1 PromoteBox">
                         <h2>We're in the news sometimes</h2>
                         <p>Maybe more than sometimes!</p>
-                        <a href="#" class="link linkOne">Check out our news & updates</a>
+                        <a href="newsroom.php" class="link linkOne">Check out our news & updates</a>
                     </div>
                 </div>
                 <div class="promoContainer">
@@ -214,7 +214,7 @@
                         <p>We're always looking for people help us deliver an even 
                             better volunteer community to reduce poverty in Malacca
                         </p>
-                        <a href="#" class="link linkTwo">Join Us</a>
+                        <a href="volunteer.php" class="link linkTwo">Join Us</a>
                     </div>
                 </div>
             </div>

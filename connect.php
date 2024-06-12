@@ -1,5 +1,4 @@
 <?php
-
 $name_host = "localhost";
 $user_sql = "root";
 $pass_sql = "abc123";
