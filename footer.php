@@ -21,7 +21,6 @@
                     <h3>Help</h3>
                     <h4><a href="mailto:imran24022004@gmail.com?subject=Contact Us Inquiry">Contact Us</a></h4>
                     <h4><a href="tel:+60127917276">Call Us</a></h4>
-                    <h4><a href="feedback.php">Send Us Feedback</a></h4>
                 </div>
                 <div class="footerCol3 FooterCol">
                     <h3>Company</h3>
