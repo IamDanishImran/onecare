@@ -8,7 +8,7 @@
 /* First Page */
 .Container {
     width: auto;
-    background-color: #3c3f52;
+    background-color: #fff0e5;
     align-items: center;
     justify-content: center;
     padding: 0px 10%;
@@ -28,7 +28,7 @@
 }
 
 .section-text .RowOne h1 {
-    color: #fff;
+    color: #0a0909;
     background-color: transparent;
     padding-left: 30px;
     font-size: 60px;
@@ -36,7 +36,7 @@
 }
 
 .section-text .RowTwo {
-    color: #fff;
+    color: #020202;
     padding-top: 20px;
     background-color: transparent;
     padding-left: 32px;
@@ -113,7 +113,7 @@
 }
 
 .ThirdPageContainer {
-    background-color: #304059;
+    background-color: #fff0e5;
     gap: 50px;
     height: 125vh;
 }
@@ -122,12 +122,12 @@
     text-align: center;
     padding-bottom: 13px;
     padding-top: 50px;
-    color: #ffffff;
+    color: #060606;
     font-size: 30px;
 }
 
 .opportunitiesvolunteer .RowOne p {
-    color: #ffffff;
+    color: #000000;
     margin-top: 5px;
     text-align: center;
     font-size: 18px;
@@ -135,7 +135,7 @@
 }
 
 .opportunitiesvolunteer .RowTwo2 {
-    color: #fff;
+    color: #070707;
     text-align: center;
     font-size: 18px;
 }
