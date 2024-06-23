@@ -50,6 +50,104 @@
     height: 450px;
 }
 
+/* ------ Statistic Section -------- */
+.stastistic-section {
+  height: auto;
+  width: 100%;
+  padding: 4% 10%;
+  background-color: rgb(255, 255, 255);
+}
+
+.statistic-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #000;
+  box-shadow: -8px 8px #000;
+}
+
+.container-A {
+  flex: 1;
+  padding: 20px;
+}
+
+.container-B {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  max-width: 600px;
+}
+
+.info h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.info p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #555555;
+}
+
+.bx-content {
+  text-align: center;
+}
+
+.b {
+  width: 150px;
+  padding: 20px 0px 20px 0px;
+}
+
+.b p {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.one {
+  background-color: #4CAF50;
+  color: #ffffff;
+  width: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.bxColor {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.bgImage {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.bgImage img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .statistic-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .container-A,
+  .container-B {
+    padding: 20px;
+  }
+}
+
+
 /* -------- Donation Section ---------- */
   
   .DonationSection {
@@ -88,18 +186,13 @@
 
   .ColTwo {
     margin-top: 10px;
-    height: auto;
+    height: 300px;
     width: 100%;
     display: flex;
-    align-items: center;
-    padding: 10px;
+    padding: 20px;
     background-color: #fff;
     border: 1px solid #000;
     box-shadow: -4px 4px #000;
-  }
-
-  .box2 {
-    margin-bottom: 92px;
   }
 
   .container {
@@ -118,7 +211,7 @@
     margin: 0px;
   }
 
-  input, select, textarea {
+  input, select {
     height: 30px;
     width: 100%;
     border: 1px solid #000;
@@ -126,21 +219,16 @@
   }
 
   textarea {
+    border: 1px solid #000;
+    border-radius: 5px;
     height: 100px;
+    width: 100%;
+    resize: none;
   }
 
   label {
     font-size: 14px;
     margin-bottom: 5px;
-  }
-
-  .RowFile {
-    display: flex;
-    align-items: center;
-  }
-
-  .RowFile label {
-    margin-right: 280px;
   }
   
   /* ------- Buttons & Links ---------- */

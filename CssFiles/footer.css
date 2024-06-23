@@ -76,7 +76,7 @@
     margin-top: 4px;
 }
 
-.footerCol5, .footerCol6 {
+.footerCol5 {
     padding: 10px;
     display: flex;
     align-items: center;
@@ -86,11 +86,6 @@
     width: 70%;
 }
 
-.footerCol6 {
-    margin-left: 100px;
-    width: 20%;
-}
-
 .footerBox1, .footerBox2 {
     display: flex;
     align-items: center;
@@ -98,12 +93,12 @@
     width: 200px;
 }
 
-.footerCol5 a, .footerCol6 a {
+.footerCol5 a {
     color: #ffd300;
     text-decoration: none;
     font-size: 13px;
 }
 
-.footerCol5 a:hover, .footerCol6 a:hover {
+.footerCol5 a:hover {
     color: #ffe047;
 }

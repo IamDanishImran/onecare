@@ -13,7 +13,12 @@
     height: 100vh;
     width: auto;
     padding: 0 10%;
-    background-color: #fff0e5;
+    background-color: #028391;
+    color: #000000;
+    color: #FE7A36;
+    color: #3652AD;
+    color: #280274;
+    color: #E9F6FF;
 }
 
 .intro  {
@@ -28,7 +33,7 @@
 }
 
 #introTitle {
-    color: #2639ed;
+    color: #8eeffc;
 }
 
 .intro p {
@@ -87,7 +92,7 @@
 }
 
 .box {
-    background-color: #ffffff;
+    background-color: #FD9B63;
     width: 400px;
     height: 180px;
     margin: 0 10px;
@@ -108,7 +113,8 @@
 
 /* ----------- aboutus ----------- */
 .aboutus {
-    background-color: #fff0e5;
+    background-color: #3652AD;
+    color: #fff;
     height: 120vh;
     width: auto;
     display: flex;
@@ -132,6 +138,7 @@
 }
 
 .info p {
+    color: #c2fff5;
     padding: 10px 0px 10px 0px;
     font-size: 15px;
 }
@@ -143,15 +150,17 @@
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    color: #000;
+    color: #000000;
 }
 
 .bx-content h3 {
+    color: #fff;
     font-size: 28px;
     font-weight: bold;
 }
 
 .bx-content p {
+    color: #fff;
     font-size: 15px;
     font-weight: bold;
     padding: 5px 0px;
@@ -208,7 +217,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff0e5;
+    background-color: #3652AD;
     height: 100vh;
     width: auto;
 }
@@ -264,7 +273,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff0e5;
+    background-color: #028391;
 }
 
 .NewsColumn {
@@ -340,7 +349,6 @@
 }
 
 /* --- Buttons & Links ---- */
-/* --- Blue Button --- */
 .Btn-Blue {
     margin-top: 20px;
     align-items: center;
@@ -348,8 +356,8 @@
     font-size: 18px;
     width: 160px;
     height: 45px;
-    color: #fff;
-    background-color: #2639ed;
+    color: #000000;
+    background-color: #FE7A36;
     box-shadow: -4px 4px #000;
     border: 2px solid transparent;
     cursor: pointer;
@@ -360,7 +368,7 @@
     box-shadow: -8px 8px #000;
 }
 
-/* --- Dark Button ---*/
+/* --- Second Button ---*/
 .Btn-Dark {
     padding: 10px 20px;
     border: 1px solid transparent;
@@ -371,14 +379,14 @@
     width: 160px;
     height: 45px;
     color: #fffae5;
-    background-color: #10162f;
+    background-color: #FE7A36;
     border: 1px solid transparent;
     cursor: pointer;
     transition: .2s;
 }
 
 .Btn-Dark:hover {
-    background-color: #3c3f52;
+    background-color: #faa276;
     border: 1px solid transparent;
 }
 
@@ -388,7 +396,8 @@
 
 /* ------------- Column Section ------------ */
 .columnInfo {
-    background-color: #fff0e5;
+    padding: 20px;
+    background-color: #3652AD;
     width: auto;
     height: auto;
     display: flex;

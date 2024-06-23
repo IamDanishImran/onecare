@@ -24,9 +24,9 @@
                               <li><a href="volunteer.php">Volunteers</a></li>
                               <li><a href="newsroom.php">News & Updates</a></li>
                               <li><a href="mailto:imran24022004@gmail.com?subject=Contact Us Inquiry">Contact Us</a></li>
-                              <li><button class="btn-sign"><a href="profile.php">Profile</a></button></li>';
+                              <li><button class="btn-sign"><a href="profileVol.php">Profile</a></button></li>';
                             
-                    } else if (isset($_SESSION['register_rec']) && $_SESSION['register_rec'] === true) {
+                    } elseif (isset($_SESSION['register_rec']) && $_SESSION['register_rec'] === true) {
 
                         echo '<li><a href="index.php">Home</a></li>
                         <li><a href="aboutus.php">About Us</a></li>
@@ -44,7 +44,7 @@
                               <li><a href="newsroom.php">News & Updates</a></li>
                               <li><a href="mailto:imran24022004@gmail.com?subject=Contact Us Inquiry">Contact Us</a></li>
                               <li><button class="btn-sign"><a href="signupVol.php">Sign Up</a></button></li>';
-                           }
+                    }
                     ?>
                 </ul>
             </div>

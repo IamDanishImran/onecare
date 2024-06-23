@@ -21,7 +21,7 @@ if (!empty($_POST)) {
     }
 
     # Save volunteer data using prepared statements
-    $stmt = $condb->prepare("INSERT INTO receiver (name, password, address, occupation, age, district, phone, salary) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt = $condb->prepare("INSERT INTO receiver (name, password, address, work, age, district, phone, salary) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("ssssissd", $rec_name, $rec_password, $rec_address, $rec_occupation, $rec_age, $rec_district, $rec_phone, $rec_salary);
 
     # Command sign up success or failed

@@ -10,10 +10,13 @@
 
 /* --------- Intro Section ---------- */
 .main {
-    height: 100vh;
+    height: auto; /* Adjust as needed */
     width: auto;
     padding: 0 10%;
     background-color: #fff0e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .intro  {
@@ -21,6 +24,7 @@
     width: 100%;
     opacity: 0;
     animation: fadeInAnimation .2s ease-in forwards;
+    text-align: center;
 }
 
 .intro h1 {
@@ -41,6 +45,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .introImage {
@@ -53,8 +60,9 @@
 }
 
 .introImage img {
-    width: 450px;
-    height: 450px;
+    width: 100%;
+    height: auto; /* Adjust image height as needed */
+    max-width: 450px; /* Limit image size */
 }
 
 /* Animation Section */
@@ -64,4 +72,71 @@
     } to {
         opacity: 1;
     }
+}
+
+/* News Content */
+.newsGallery {
+    width: 100%;
+    background-color: #4a4a4a;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsArticle {
+    width: 80%;
+    background-color: #e6f2ff; /* Soft blue background */
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #b3d9ff; /* Lighter blue border */
+}
+
+.newsImage {
+    width: 40%;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure image stays within borders */
+}
+
+.newsImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.newsContent {
+    width: 60%;
+    background-color: #ffffff; /* White background */
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.newsContent h3 {
+    font-size: 20px;
+    color: #030303;
+}
+
+.newsContent p {
+    font-size: 16px;
+    color: #030303;
+    line-height: 1.6;
 }

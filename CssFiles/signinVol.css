@@ -32,7 +32,7 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  max-width: 400px;
   opacity: 0;
   animation: fadeInAnimation ease-in .2s forwards;
 }
@@ -42,6 +42,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .loginTitle h2 {
@@ -70,6 +71,7 @@ body {
 .RowThree, 
 .RowFour, 
 .RowFive, 
+.RowSeven,
 .Error {
   width: 100%;
   max-width: 500px;
@@ -91,9 +93,15 @@ input {
 .RowThree,
 .RowFour, 
 .RowFive, 
-.RowSix {
+.RowSix,
+.RowSeven {
   display: flex;
   flex-direction: column;
+}
+
+.RowThree {
+  justify-content: center;
+  align-items: center;
 }
 
 .RowFour {
@@ -113,7 +121,24 @@ span a {
   color: #3a10e5;
 }
 
+.RowFive {
+  justify-content: center;
+  align-items: center;
+}
+
+.RowFive a {
+  color: #fff;
+}
+
 .RowSix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  padding: 20px 0px;
+}
+
+.RowSeven {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,7 +165,7 @@ span a {
   color: #fff;
   margin-bottom: 5px;
   transition: .2s;
-  width: 100%;
+  width: 95%;
 }
 
 .Btn:hover {
@@ -155,7 +180,7 @@ span a {
   height: 32px;
   margin-bottom: 5px;
   transition: .2s;
-  width: 100%;
+  width: 95%;
 }
 
 .backBtn:hover {

@@ -1,90 +1,75 @@
 <?php
 include 'connect.php';
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Validate and sanitize input
-    $name = htmlspecialchars(strip_tags(trim($_POST['name'])));
-    $phone = htmlspecialchars(strip_tags(trim($_POST['phone'])));
-    $address = htmlspecialchars(strip_tags(trim($_POST['address'])));
-    $email = filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL);
-    $item_type = htmlspecialchars(strip_tags(trim($_POST['donateType'])));
-    $item_description = htmlspecialchars(strip_tags(trim($_POST['item_description'])));
-
-    // Handle file upload
-    $target_dir = "uploads/";
-    $target_file = $target_dir . basename($_FILES["item_picture"]["name"]);
-    $uploadOk = 1;
-    $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-
-    // Check if file is an actual image or fake image
-    $check = getimagesize($_FILES["item_picture"]["tmp_name"]);
-    if ($check !== false) {
-        $uploadOk = 1;
-    } else {
-        echo "File is not an image.";
-        $uploadOk = 0;
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Check if the user is logged in
+    session_start();
+    if (!isset($_SESSION['register_vol']) || $_SESSION['register_vol'] !== true) {
+        echo "<script>alert('Please log in first'); window.location.href = 'signinVol.php';</script>";
+        exit();
     }
 
-    // Check file size
-    if ($_FILES["item_picture"]["size"] > 500000) {
-        echo "Sorry, your file is too large.";
-        $uploadOk = 0;
-    }
+    if (!empty($_POST)) {
+        $donor_email = mysqli_real_escape_string($condb, $_POST['email']);
+        $donor_item  = mysqli_real_escape_string($condb, $_POST['donateType']);
+        $donor_desc  = mysqli_real_escape_string($condb, $_POST['item_description']);
 
-    // Allow certain file formats
-    if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg") {
-        echo "Sorry, only JPG, JPEG, & PNG files are allowed.";
-        $uploadOk = 0;
-    }
-
-    // Check if $uploadOk is set to 0 by an error
-    if ($uploadOk == 0) {
-        echo "Sorry, your file was not uploaded.";
-    // If everything is ok, try to upload file
-    } else {
-        if (move_uploaded_file($_FILES["item_picture"]["tmp_name"], $target_file)) {
-            echo "The file ". htmlspecialchars(basename($_FILES["item_picture"]["name"])). " has been uploaded.";
-        } else {
-            echo "Sorry, there was an error uploading your file.";
-        }
-    }
-
-    // Insert data into the database
-    if ($uploadOk == 1 && $email) {
-        $sql = "INSERT INTO donor (name, phone, address, email, item_type, item_description, item_picture) VALUES (?, ?, ?, ?, ?, ?, ?)";
-        $stmt = $conn->prepare($sql);
-
-        $stmt->bind_param("sssssss", $name, $phone, $address, $email, $item_type, $item_description, $target_file);
-
-        if ($stmt->execute()) {
-            echo "<script>alert("New record created successfully");</script>";
-        } else {
-            echo "Error: " . $stmt->error;
+        if (empty($donor_email) || empty($donor_item)) {
+            echo "<script>alert('Please complete the form'); window.history.back();</script>";
+            exit();
         }
 
-        $stmt->close();
-    } else {
-        echo "Invalid input data.";
+        // Get volunteer name and password from session
+        if (!isset($_SESSION['user_vol']['name']) || !isset($_SESSION['user_vol']['password'])) {
+            echo "<script>alert('Session data missing. Please log in again.'); window.location.href = 'signinVol.php';</script>";
+            exit();
+        }
+
+        $volunteer_name = $_SESSION['user_vol']['name'];
+        $volunteer_password = $_SESSION['user_vol']['password'];
+
+        // Verify that the volunteer name and password exist in the volunteer table
+        $volunteer_check = $condb->prepare("SELECT VolunteerID FROM volunteer WHERE name = ? AND password = ?");
+        $volunteer_check->bind_param("ss", $volunteer_name, $volunteer_password);
+        $volunteer_check->execute();
+        $volunteer_check->store_result();
+
+        if ($volunteer_check->num_rows > 0) {
+            $volunteer_check->bind_result($volunteer_id);
+            $volunteer_check->fetch();
+
+            // Save donor data using prepared statements
+            $SQL_stmt = $condb->prepare("INSERT INTO donor (email, item_type, description, vol_ID) VALUES (?, ?, ?, ?)");
+            $SQL_stmt->bind_param("sssi", $donor_email, $donor_item, $donor_desc, $volunteer_id);
+
+            // Command sign up success or failed
+            if ($SQL_stmt->execute()) {
+                echo "<script>alert('Donation Successfully Registered!'); window.location.href = 'index.php';</script>";
+            } else {
+                echo "<script>alert('Donation Registration Failed!'); window.history.back();</script>";
+            }
+            $SQL_stmt->close();
+        } else {
+            echo "<script>alert('Invalid volunteer credentials!'); window.history.back();</script>";
+        }
+        $volunteer_check->close();
     }
 }
-
-$conn->close();
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Donation Form</title>
+    <title>OneCare</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CssFiles/donor.css"> 
 </head>
 <body>
     <section class="main">
-        <!-- Header Section -->
-        <?php include 'header.php'; ?> 
-         
+        <!-- Include Header Section -->
+        <?php include 'header.php'; ?>
+
         <!-- Intro Section -->
         <article class="intro-Content">
             <section class="intro">
@@ -100,74 +85,109 @@ $conn->close();
             </section>
         </article>
     </section>
-    
-    <section class="DonationSection">
-        <form action="donor.php" method="post" enctype="multipart/form-data">
-            <article class="ColOne">
-                <div class="containerOne">
-                    <h1>Let's make a donation!</h1>
-                    <p>With your donation, we can develop a strong society for our future.
-                        Your donation can change someone's life.
-                    </p>
-                </div>
-            </article>
-            <article class="ColTwo">
-                <div class="container box1">
-                    <div class="Row">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="Row">
-                        <label for="phone">Phone Number</label>
-                        <input type="text" id="phone" name="phone" required>
-                    </div>
-                    <div class="Row">
-                        <label for="address">Home Address</label>
-                        <input type="text" id="address" name="address" required>
-                    </div>
-                    <div class="Row">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="Row">
-                        <label for="donateType">Donation Type</label>
-                        <select id="donateType" name="donateType" required>
-                            <option value="Dry food">Dry Food</option>
-                            <option value="Diapers">Diapers</option>
-                            <option value="Hygiene stuff">Hygiene Stuff</option>
-                            <option value="Others">Others</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="container box2">
-                    <div class="Row">
-                        <label for="item_description">Item Description</label>
-                        <textarea id="item_description" name="item_description" required></textarea>
-                    </div>
-                    <div class="Row RowFile">
-                        <label for="item_picture">Item Picture</label>
-                        <input type="file" id="item_picture" name="item_picture" required>
-                    </div>
-                    <div class="Row">
-                        <button class="Btn" type="submit">Submit</button>
-                    </div>
-                </div>
-            </article>
-        </form>
-    </section>
 
-    <!-- Feedback Section -->
-    <div class="columnInfo donation">
-        <section class="columnWrapper donation-section">
-            <h1>Join Our OneCare Donation</h1>
-            <br>
-            <p>With your donations, we can develop a strong community support to our organization team member and volunteers</p>
-            <br>
-            <button class="Btn-Dark B-Donate"><a href="donor.php" id="link">Donate Now</a></button>
+    <?php
+    include 'connect.php';
+    // Query to get counts
+    $query = "SELECT COUNT(*) AS donor_count FROM donor";
+    $result = mysqli_query($condb, $query);
+    if ($result) {
+        $counts = mysqli_fetch_assoc($result);
+        $total_count = $counts['donor_count'];
+        }
+        else {
+            echo "Error: " . mysqli_error($condb);
+        }    
+        // Close the connection
+        mysqli_close($condb);
+    ?>
+
+
+            <!-- Statistic Section -->
+            <section class="stastistic-section">
+                <article class="statistic-content">
+                    <div class="container-A">
+                        <article class="info">
+                            <h1>Statistic Donation</h1>
+                            <p>Discover the heart and soul behind OneCare, your go-to destination for comprehensive 
+                                healthcare solutions and support services. In this space, we provide you 
+                                with an overview of who we are, what we stand for, and our mission to create meaningful 
+                                change and improve the lives of individuals and communities around Melacca. 
+                                Join us on our journey to a healthier, happier Melacca.
+                            </p>
+                        </article>
+                        <article class="bx-content">
+                            <div class="b">
+                                <div class="one bxColor"><h3><?php echo $total_count ?></h3></div>
+                                <p>Total Donation</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="container-B">
+                        <div class="bgImage">
+                            <div><img src="media/stats.png" alt="" id="person"></div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+        <!-- Donation Form Section -->
+        <section class="DonationSection">
+            <form action="donor.php" method="post">
+                <article class="ColOne">
+                    <div class="containerOne">
+                        <h1>Let's make a donation!</h1>
+                        <p>With your donation, we can develop a strong society for our future.
+                            Your donation can change someone's life.
+                        </p>
+                    </div>
+                </article>
+                <!-- Form -->
+                <article class="ColTwo">
+                    <div class="container box1">
+                        <div class="Row">
+                            <h2>Fill the form to make donation</h2>
+                        </div>
+                        <div class="Row">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="Row">
+                            <label for="donateType">Donation Type</label>
+                            <select id="donateType" name="donateType" required>
+                                <option value="Dry food">Dry Food</option>
+                                <option value="Diapers">Diapers</option>
+                                <option value="Hygiene stuff">Hygiene Stuff</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="container box2">
+                        <div class="Row">
+                            <label for="item_description">Item Description</label>
+                            <textarea id="item_description" name="item_description" required></textarea>
+                        </div>
+                        <div class="Row">
+                            <button class="Btn" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </article>
+            </form>
         </section>
-    </div>
-    
-    <!-- Footer Section -->
-    <?php include 'footer.php'; ?>
+        
+        <!-- Feedback Section -->
+         <div class="columnInfo volunteer">
+            <section class="columnWrapper volunteer-section">
+                <h1>Tell us your feedback here</h1>
+                <br>
+                <p>Welcome to OneCare, where we're dedicated to making a difference in Melacca. Join us in empowering our community through volunteering and support. Together, we can create positive change.</p>
+                <br>
+                <button class="Btn-Dark B-Feedback"><a href="feedback.php" id="link">Tell Us</a></button>
+            </section>
+        </div>
+
+
+        <!-- Include Footer Section -->
+        <?php include 'footer.php'; ?>
 </body>
 </html>
