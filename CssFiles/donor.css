@@ -1,8 +1,31 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: monospace;
+}
+
 .main {
     height: 100vh;
     width: auto;
     padding: 0 10%;
+<<<<<<< HEAD
     background-color: #fff0e5;
+=======
+    background-color: #338354;
+}
+
+.intro-Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  opacity: 0;
+  animation: fadeInAnimation ease-in .2s forwards;
+>>>>>>> 86ee0f4aa9b204dfb70a16ae0c171eede2b1d210
 }
 
 .intro  {
@@ -19,14 +42,6 @@
     line-height: 20px;
 }
 
-
-.intro-Content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 90px;
-}
-
 .introImage {
     display: flex;
     align-items: center;
@@ -38,131 +53,186 @@
     width: 450px;
     height: 450px;
 }
-/* General styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
-    font-family: monospace;
+
+/* ------ Statistic Section -------- */
+.stastistic-section {
+  height: auto;
+  width: 100%;
+  padding: 4% 10%;
+  background-color: rgb(255, 255, 255);
+}
+
+.statistic-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #000;
+  box-shadow: -8px 8px #000;
+}
+
+.container-A {
+  flex: 1;
+  padding: 20px;
+}
+
+.container-B {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  max-width: 600px;
+}
+
+.info h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.info p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #555555;
+}
+
+.bx-content {
+  text-align: center;
+}
+
+.b {
+  width: 150px;
+  padding: 20px 0px 20px 0px;
+}
+
+.b p {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.one {
+  background-color: #4CAF50;
+  color: #ffffff;
+  width: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.bxColor {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.bgImage {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.bgImage img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .statistic-content {
+    flex-direction: column-reverse;
+    text-align: center;
   }
-  
-  body {
-    max-width: 100%;
-    overflow-x: hidden;
+
+  .container-A,
+  .container-B {
+    padding: 20px;
   }
+}
+
+
+/* -------- Donation Section ---------- */
   
   .DonationSection {
-    height: 120vh;
+    height: 80vh;
     width: 100%;
-    background-color: #b1e5fc;
+    background-color: #9fffb7;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
   }
-  
-  .DonationForm {
-    background-color: #fff;
-    border-radius: 10px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+  }
+
+  .ColOne {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    background-color: #287b4b;
     border: 1px solid #000;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
+    border-radius: 5px;
   }
-  
-  .DonationTitle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
+
+  .containerOne h1 {
+    font-size: 25px;
   }
-  
-  .DonationTitle h2 {
-    font-size: 22px;
-    margin-bottom: 40px;
-  }
-  
-  .DonationTitle h1 {
-    font-size: 30px;
-  }
-  
-  .DonationTitle p {
+
+  .containerOne p {
     font-size: 15px;
   }
-  
-  .RowInput {
+
+  .ColTwo {
+    margin-top: 10px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: -4px 4px #000;
+  }
+
+  .container {
+    height: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 400px;
+    align-items: center;
+  }
+
+  .Row {
     padding: 10px;
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    margin: 0px;
   }
-  
-  .RowOne,
-  .RowTwo,
-  .RowThree,
-  .RowFour,
-  .RowFive,
-  .RowSix,
-  .RowSeven,
-  .Error {
-    width: 100%;
-    max-width: 500px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 1em;
-  }
-  
+
   input, select {
-    height: 35px;
-    border-radius: 5px;
-    border: 1px solid #000;
+    height: 30px;
     width: 100%;
-    padding: 5px;
-  }
-  
-  textarea {
-    border-radius: 5px;
     border: 1px solid #000;
-    height: 160px;
+    border-radius: 5px;
+  }
+
+  textarea {
+    border: 1px solid #000;
+    border-radius: 5px;
+    height: 100px;
     width: 100%;
     resize: none;
-    
+  }
 
-  }
-  
-  .RowFour,
-  .RowFive,
-  .RowSix,
-  .RowSeven {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .RowSeven {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    padding: 20px 0px;
-  }
-  
-  /* ----- Error Text -------- */
-  .Error {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    color: red;
-    font-size: 1em;
+  label {
+    font-size: 14px;
+    margin-bottom: 5px;
   }
   
   /* ------- Buttons & Links ---------- */
@@ -170,58 +240,72 @@
     border: 1px solid transparent;
     border-radius: 5px;
     height: 32px;
+    width: 100%;
     background-color: #3a10e5;
     color: #fff;
-    margin-bottom: 5px;
     transition: .2s;
-    width: 100%;
   }
   
   .Btn:hover {
     background-color: #5a37e7;
   }
   
-  .backBtn {
-    color: #fff;
-    background-color: #000;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    height: 32px;
-    margin-bottom: 5px;
-    transition: .2s;
-    width: 100%;
-  }
-  
-  .backBtn:hover {
-    background-color: #3c3c3c;
+  /* ---- Animation ---- */
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    } 
+    to {
+      opacity: 1;
+    }
   }
 
-  .AFBtn{
-    color: #fff;
-    background-color: #323131;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    height: 32px;
-    margin-bottom: 5px;
-    transition: .2s;
-    width: 100%;
-  }
-  
-  .AFBtn:hover{
-    background-color: #666666;
-  }
-  
-  #link {
-    font-size: 15px;
-    color: #fff;
-  }
-  
-  .RowSeven #link {
-    color: #000;
-    transition: .2s;
-  }
-  
-  .RowSeven #link:hover {
-    color: #3a10e5;
-  }
-  
+  /* ---- Feedback Section ----- */
+  .columnInfo {
+    background-color: #fff0e5;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.columnWrapper {
+    text-align: center;
+    padding: 10px;
+    background-color: #fffae5;
+    font-size: 18px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 1400px;
+}
+
+.columnWrapper h1 {
+    font-size: 30px;
+}
+
+.Btn-Dark {
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  width: 160px;
+  height: 45px;
+  color: #fffae5;
+  background-color: #10162f;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.Btn-Dark:hover {
+  background-color: #3c3f52;
+  border: 1px solid transparent;
+}
+
+.Btn-Dark #link {
+  color: #fff;
+}

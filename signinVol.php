@@ -7,35 +7,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $vol_password = mysqli_real_escape_string($condb, $_POST['password']);
 
     if (empty($vol_username) || empty($vol_password)) {
-        echo "<script>alert('Please fill the form')</script>";
+        echo "<script>alert('Please fill the form');</script>";
     } else {
-
-        $login_command = "SELECT * FROM volunteer
-                          WHERE name = ? AND password = ? LIMIT 1";
+        $login_command = "SELECT * FROM volunteer WHERE name = ? AND password = ? LIMIT 1";
         
         $stmt = mysqli_prepare($condb, $login_command);
         mysqli_stmt_bind_param($stmt, "ss", $vol_username, $vol_password);
         mysqli_stmt_execute($stmt);
         $result = mysqli_stmt_get_result($stmt);
 
-        if(mysqli_num_rows($result) == 1) {
+        if (mysqli_num_rows($result) == 1) {
             $data = mysqli_fetch_assoc($result);
-            $_SESSION['register_vol'] = true;
-            $_SESSION['username'] = $data['username'];
-            $_SESSION['password'] = $data['password'];
-            echo "<script>alert('Login Success!');
-                  window.location.href = 'index.php';</script>";
+            $_SESSION['user_vol'] = $data; // Store all user info in the session
+            $_SESSION['register_vol'] = true; // Indicates the user is a volunteer
+            echo "<script>alert('Login Success!'); window.location.href = 'index.php';</script>";
         } else {
             $_SESSION['register_vol'] = false;
-            echo "<script>alert('Login Failed!.');
-                  window.history.back();</script>";
+            echo "<script>alert('Login Failed!'); window.history.back();</script>";
         }
     }
-    mysqli_close($condb);
+    mysqli_close($condb); // Optional, but good practice
 }
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">

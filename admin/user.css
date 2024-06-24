@@ -1,0 +1,152 @@
+/* user.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.control-panel {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.title-panel {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.title-panel h2 {
+    margin: 0;
+    color: #333;
+}
+
+.block {
+    margin-bottom: 40px;
+}
+
+.info, .newsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Wrapper, .uploadContainer, .viewContainer, .feedbackContainer {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Wrapper p, .viewContainer h3, .viewContainer p, .feedbackItem p {
+    margin: 0;
+}
+
+.Wrapper form, .viewContainer form, .feedbackForm form {
+    margin-left: 20px;
+}
+
+button, input[type="submit"] {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #ff1a1a;
+}
+
+.uploadContainer form, .feedbackForm form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.uploadContainer .form-group, .feedbackForm .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.uploadContainer input[type="file"],
+.uploadContainer input[type="text"],
+.uploadContainer textarea,
+.feedbackForm input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.uploadContainer input[type="submit"],
+.feedbackForm input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.uploadContainer input[type="submit"]:hover,
+.feedbackForm input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.viewPanel, .feedbackPanel {
+    margin-top: 40px;
+}
+
+.viewWrapper, .feedbackWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.viewContainer, .feedbackContainer {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.viewImage {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.viewText, .feedbackItem p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Scrollable panels */
+.user-volunteer, .user-receiver, .newsWrapper, .viewWrapper, .feedbackWrapper {
+    max-height: 300px; /* Adjust this height as needed */
+    overflow-y: auto;
+    padding-right: 10px; /* To prevent content from hiding behind the scrollbar */
+}

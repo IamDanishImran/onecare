@@ -60,7 +60,7 @@
         <section class="gallerySection">
   <div class="galleryWrapper">
     <div class="galleryPic">
-      <marquee behavior="scroll" direction="left">
+      <article class="galleryShow">
         <div class="galleryItem" style="display: inline-block;">
           <img src="" alt="Gallery Image 1">
         </div>
@@ -76,7 +76,7 @@
         <div class="galleryItem" style="display: inline-block;">
           <img src="" alt="Gallery Image 5">
         </div>
-      </marquee>
+    </article>
     </div>
   </div>
 </section>

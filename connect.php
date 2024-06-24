@@ -9,7 +9,6 @@ $condb = mysqli_connect($name_host, $user_sql, $pass_sql, $name_db);
 if (!$condb) {
     die("Connection failed: " . mysqli_connect_error());
 } else {
-    # echo "Connection successful";
+    // echo "Connection successful";
 }
-
 ?>

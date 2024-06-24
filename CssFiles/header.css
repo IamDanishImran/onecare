@@ -7,7 +7,7 @@ nav {
     justify-content: space-between;
     padding: 15px 20px;
     background-color: transparent;
-    color: #000000;
+    color: #8eeffc;
 }
 
 .logo {
@@ -40,7 +40,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #545454;
+    color: #4c4c4c;
 }
 
 .btn-sign {
@@ -51,7 +51,7 @@ nav ul li a:hover {
     height: 35px;
     border: 2px solid transparent;
     border-radius: 5px;
-    background-color: #3a10e5;
+    background-color: #FE7A36;
     color: #fff;
     cursor: pointer;
     font-weight: bold;
@@ -59,12 +59,12 @@ nav ul li a:hover {
 }
 
 .btn-sign:hover {
-    background-color: #5630f1;
+    background-color: #fc9e6f;
     border: 2px solid transparent;
 }
 
 .btn-sign a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     display: block;
     width: 100%;
@@ -74,7 +74,7 @@ nav ul li a:hover {
 }
 
 .btn-sign a:hover {
-    color: #b3b3b3;
+    color: #484848;
 }
 
 /* ---- Animation ----- */

@@ -5,20 +5,22 @@ include 'connect.php';
 
 # Test if data POST that sent from the sign up form
 if (!empty($_POST)) {
-    $vol_name     = mysqli_real_escape_string($condb, $_POST['username']);
-    $vol_password = mysqli_real_escape_string($condb, $_POST['password']);
-    $vol_phone    = mysqli_real_escape_string($condb, $_POST['phoneNumber']);
-    $vol_age      = mysqli_real_escape_string($condb, $_POST['age']);
+    $vol_name         = mysqli_real_escape_string($condb, $_POST['username']);
+    $vol_password     = mysqli_real_escape_string($condb, $_POST['password']);
+    $vol_phone        = mysqli_real_escape_string($condb, $_POST['phoneNumber']);
+    $vol_age          = mysqli_real_escape_string($condb, $_POST['age']);
+    $vol_work         = mysqli_real_escape_string($condb, $_POST['work']);
+    $vol_address      = mysqli_real_escape_string($condb, $_POST['address']);
 
     # Test if data has been filled
-    if (empty($vol_name) or empty($vol_password) or empty($vol_phone) or empty($vol_age)) {
+    if (empty($vol_name) or empty($vol_password) or empty($vol_phone) or empty($vol_age) or empty($vol_work) or empty($vol_address)) {
         die("<script>alert('Please complete the form');
         window.history.back();</script>");
     }
 
     # Save volunteer data using prepared statements
-    $stmt = $condb->prepare("INSERT INTO volunteer (name, password, phone, age) VALUES (?, ?, ?, ?)");
-    $stmt->bind_param("sssi", $vol_name, $vol_password, $vol_phone, $vol_age);
+    $stmt = $condb->prepare("INSERT INTO volunteer (name, password, phone, age, address, work) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssiss", $vol_name, $vol_password, $vol_phone, $vol_age, $vol_address, $vol_work);
 
     # Command sign up success or failed
     if ($stmt->execute()) {
@@ -74,6 +76,16 @@ if (!empty($_POST)) {
                     <div class="ColTwo ColBox">
                         <label for="age">Age</label>
                         <input type="number" id="age" name="age" required>
+                    </div>
+                </div>
+                <div class="RowThree">
+                    <div class="ColOne ColBox">
+                        <label for="phone">Address</label>
+                        <input type="text" id="address" name="address" required> 
+                    </div>
+                    <div class="ColTwo ColBox">
+                        <label for="age">Occupation</label>
+                        <input type="text" id="work" name="work" required>
                     </div>
                 </div>
 
