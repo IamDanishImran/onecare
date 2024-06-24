@@ -12,7 +12,7 @@
     height: 100vh;
     width: auto;
     padding: 0 10%;
-    background-color: #fff0e5;
+    background-color: #028391;
 }
 
 .intro  {
@@ -46,7 +46,8 @@
   height: auto;
   width: 100%;
   padding: 4% 10%;
-  background-color: rgb(255, 255, 255);
+  background-color: #E9F6FF;
+
 }
 
 .statistic-content {
@@ -102,7 +103,7 @@
 }
 
 .one {
-  background-color: #4CAF50;
+  background-color: #FE7A36;
   color: #ffffff;
   width: auto;
   padding: 10px;
@@ -144,7 +145,7 @@
   .DonationSection {
     height: 80vh;
     width: 100%;
-    background-color: #9fffb7;
+    background-color: #3652AD;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,7 +229,7 @@
     border-radius: 5px;
     height: 32px;
     width: 100%;
-    background-color: #3a10e5;
+    background-color: #FE7A36;
     color: #fff;
     transition: .2s;
   }
@@ -249,13 +250,13 @@
 
   /* ---- Feedback Section ----- */
   .columnInfo {
-    background-color: #fff0e5;
+    padding: 20px;
+    background-color: #028391;
     width: auto;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0px 20px 0px;
 }
 
 .columnWrapper {
