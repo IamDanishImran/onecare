@@ -155,10 +155,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <div class="Row">
                             <label for="donateType">Donation Type</label>
                             <select id="donateType" name="donateType" required>
-                                <option value="Dry food">Dry Food</option>
-                                <option value="Diapers">Diapers</option>
-                                <option value="Hygiene stuff">Hygiene Stuff</option>
-                                <option value="Others">Others</option>
+                                <option value="Clothing">Clothing</option>
+                                <option value="Household goods">Household goods</option>
+                                <option value="School supplies">School supplies</option>
+                                <option value="Books">Books</option>
+                                <option value="Toys">Toys</option>
                             </select>
                         </div>
                     </div>
