@@ -12,7 +12,7 @@
     height: 100vh;
     width: auto;
     padding: 0 10%;
-    background-color: #fff0e5;
+    background-color: #028391;
 }
 
 .intro-Content {
@@ -98,6 +98,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    background-color: #3652AD;
   }
   
   .galleryWrapper {
@@ -141,7 +142,7 @@
 .documentSection {
     height: 100vh;
     width: auto;
-    background-color: #fff;
+    background-color: #E9F6FF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,6 +191,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #028391;
 }
 
 .teamWrapper {
