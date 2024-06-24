@@ -19,8 +19,7 @@
             <section class="intro">
                 <h1>Welcome to the<br><span id="introTitle">OneCare</span></h1>
                 <br>
-                <p>This is temporary text in a single paragraph. Perhaps it will be
-                    change soon before we launch the websites, thank you.
+                <p>Welcome to OneCare, where community spirit and compassion make a real difference. Our mission is to support those in need in the Malaca area by providing basic necessities, educational opportunities, and health services. Volunteering with us means making an impact, connecting with like-minded individuals, and gaining new skills. With a range of flexible opportunities, you can find the perfect way to contribute. Join OneCare today and help create a stronger, more resilient community.
                 </p>
                 <button class="Btn-Blue B-Start"><a href="signupVol.php" id="link">Get Started</a></button>
             </section>
@@ -35,18 +34,15 @@
         <article class="boxGroup">
             <div class="box">
                 <h2>Community</h2>
-                <p>This text might be change soon. Example of text position. To learn more
-                    please refer the programmer</p>
+                <p>Community brings people together, fostering connections, support, and a sense of belonging. It enriches lives, promotes collective well-being, and creates a stronger, more resilient society.</p>
             </div>
             <div class="box" id="box-2">
                 <h2>News</h2>
-                <p>This text might be change soon. Example of text position. To learn more
-                    please refer the programmer</p>
+                <p>News connects communities by keeping people informed, fostering awareness, and promoting engagement. It enriches public discourse, supports transparency, and helps create an informed, resilient society.</p>
             </div>
             <div class="box" id="box-3">
                 <h2>Feedback</h2>
-                <p>This text might be change soon. Example of text position. To learn more
-                    please refer the programmer</p>
+                <p>Your feedback helps us improve! Share your thoughts to make our website better for everyone.</p>
             </div>
         </article>
     </div>
@@ -135,7 +131,7 @@
                     <h3>Community Engagement</h3>
                 </div>
                 <div class="beneText">
-                    <p>Encourages community involvement and support for those in need.</p>
+                    <p>Join our volunteering service to engage with the community directly, making a real difference in areas like education, healthcare, and more. Find flexible opportunities that match your interests and schedule, and connect with others who share your passion for community support. Start making an impact today by becoming a volunteer and helping us build a stronger community together.</p>
                 </div>
             </div>
             <div class="benefits-box2 boxBene">
@@ -143,7 +139,7 @@
                     <h3>Efficiency</h3>
                 </div>
                 <div class="beneText">
-                    <p>Streamlines the process of connecting volunteers and aid recipients.</p>
+                    <p>Joining our volunteering service is quick and easy. Simply sign up on our website to start making a difference right away. We ensure efficiency by matching your skills and interests with meaningful opportunities. Your involvement not only benefits others but also contributes to a more effective and supportive community.</p>
                 </div>
             </div>
             <div class="benefits-box3 boxBene">
@@ -151,7 +147,7 @@
                     <h3>Scalability</h3>
                 </div>
                 <div class="beneText">
-                    <p>Can potentially scale to serve larger communities or regions.</p>
+                    <p>Joining our volunteering service is easy and scalable to fit your availability and interests. Whether you have a few hours a week or want to commit more time, there's a role for everyone. Your contributions help us expand our impact and reach more people in need, creating a positive change in our community. Sign up today to start making a difference, no matter how big or small your commitment.</p>
                 </div>
             </div>
             <div class="benefits-box4 boxBene">
@@ -159,7 +155,7 @@
                     <h3>Transparency</h3>
                 </div>
                 <div class="beneText">
-                    <p>Provides a transparent platform where donors can see the impact of their contributions.</p>
+                    <p> We ensure transparency by sharing how donations are used and showcasing the impact of your efforts. You'll have access to regular updates and reports, ensuring you're always informed about our initiatives. Together, we strive for accountability and trust, making a real difference in our community.</p>
                 </div>
             </div>
         </div>
