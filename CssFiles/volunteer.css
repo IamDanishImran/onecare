@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-<<<<<<< HEAD
     font-family: monospace;
 }
 
@@ -204,9 +203,6 @@
 }
 
 .places ul {
-=======
-    text-decoration: none;
->>>>>>> 86ee0f4aa9b204dfb70a16ae0c171eede2b1d210
     list-style-type: none;
     font-family: monospace;
     scroll-behavior: smooth;
