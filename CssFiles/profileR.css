@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+  }
+  
+  .dashboard {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #10162f;
+  }
+  
+  .main {
+  height: 90%;
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  }
+  
+  .main a {
+  color: #000;
+  font-size: 18px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #fff;
+  text-decoration: none;
+  transition: .2s;
+  }
+  
+  .main a:hover {
+  background-color: rgb(169, 169, 169);
+  }
+  
+  .profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 12px;
+  }
+  
+  
+  /*------- User Info Section ------ */
+  .infoTitle {
+    margin-top: 10px;
+    padding: 5px 5px 0px 5px;
+  }
+  .user-info {
+  background-color: #ffffff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  height: auto;
+  margin-top: 10px;
+  width: 100%;
+  box-shadow: -4px 4px #000;
+  }
+  
+  .infoWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+  }
+  
+  .infoBox {
+    display: flex;
+    align-items: center;
+    margin: 0px 20px 0px 20px;
+  }
+  
+  .info {
+    margin: 0;
+  }
+  
+  /* --------- Panels ----------*/
+  .panels {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .panelBox {
+    width: 33%;
+    height: 300px;
+    margin: 0 5px 0 5px;
+  }
+  
+  .title {
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  .panelWrapper {
+    width: 100%;
+    height: 200px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #a7a7a7;
+    box-shadow: -4px 4px #000;
+  }
+  
+  .donation {
+    background-color: #FF7F3E;
+  }
+  .volunteer {
+    background-color: #3AA6B9;
+  }
+  .activity {
+    background-color: #EE4E4E;
+  }
