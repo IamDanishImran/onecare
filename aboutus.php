@@ -59,24 +59,24 @@
 
         <section class="gallerySection">
   <div class="galleryWrapper">
-    <div class="galleryPic">
+    <marquee class="galleryPic">
       <article class="galleryShow">
         <div class="galleryItem" style="display: inline-block;">
-          <img src="" alt="Gallery Image 1">
+          <img src="media/1.jpeg" alt="Gallery Image 1">
         </div>
         <div class="galleryItem" style="display: inline-block;">
-          <img src="" alt="Gallery Image 2">
+          <img src="media/2.jpg" alt="Gallery Image 2">
         </div>
         <div class="galleryItem" style="display: inline-block;">
-          <img src="" alt="Gallery Image 3">
+          <img src="media/3.jpg" alt="Gallery Image 3">
         </div>
         <div class="galleryItem" style="display: inline-block;">
-          <img src="" alt="Gallery Image 4">
+          <img src="media/4.jpg" alt="Gallery Image 4">
         </div>
         <div class="galleryItem" style="display: inline-block;">
-          <img src="" alt="Gallery Image 5">
+          <img src="media/5.jpg" alt="Gallery Image 5">
         </div>
-    </article>
+    </marquee>
     </div>
   </div>
 </section>
@@ -166,31 +166,31 @@
                     <div class="members">
                         <img src="media/imran.png" alt="Imran's picture">
                         <div class="Role">
-                            <p>Imran <br> Project Manager</p>
+                            <p>Imran <br> Chief Executive Officer</p>
                         </div>
                     </div>
                     <div class="members">
                         <img src="media/fudhail.png" alt="Fudhail's picture">
                         <div class="Role">
-                            <p>Fudhail <br> Front-End Developer</p>
+                            <p>Fudhail <br> Operations Manager</p>
                         </div>
                     </div>
                     <div class="members">
                         <img src="media/danish.png" alt="Danish's picture">
                         <div class="Role">
-                            <p>Danish <br> Designer</p>
+                            <p>Danish <br> Project Manager</p>
                         </div>
                     </div>
                     <div class="members">
                         <img src="media/irwan.png" alt="Irwan's picture">
                         <div class="Role">
-                            <p>Irwan <br> Back-End Developer</p>
+                            <p>Irwan <br> HR Specialist</p>
                         </div>
                     </div>
                     <div class="members">
                         <img src="media/nazhan.png" alt="Nazhan's picture">
                         <div class="Role">
-                            <p>Nazhan <br> Content Specialist</p>
+                            <p>Nazhan <br> Strategic Planner</p>
                         </div>
                     </div>
                 </div>

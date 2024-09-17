@@ -101,7 +101,7 @@ $Rec_Result = mysqli_query($condb, $SQL_receiver);
             <div class="title-panel"><h2>Upload News Panel</h2></div>
             <article class="newsWrapper">
                 <div class="uploadContainer">
-                    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype="multipart/form-data">
+                    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                         <div class="form-group">
                             <input type="file" name="upload" id="upload" required>
                         </div>
@@ -133,7 +133,7 @@ $Rec_Result = mysqli_query($condb, $SQL_receiver);
                         }
                         echo '<h3>' . htmlspecialchars($row["title"]) . '</h3>';
                         echo '<p class="viewText">' . htmlspecialchars($row["content"]) . '</p>';
-                        echo '<form method="post" action="admin/news.php">';
+                        echo '<form method="post" action="admin/user.php">';
                         echo '<input type="hidden" name="newsID" value="' . $row["newsID"] . '">';
                         echo '<button type="submit" class="deleteBtn">Delete</button>';
                         echo '</form>';
@@ -145,6 +145,86 @@ $Rec_Result = mysqli_query($condb, $SQL_receiver);
                 ?>
             </article>
         </article>
+
+
+        <article class="placeWrapper">
+    <?php
+    # Check if form is submitted
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        # Collect Place's Data
+        $place_name = mysqli_real_escape_string($condb, $_POST['title']);
+        $place_description = mysqli_real_escape_string($condb, $_POST['description']);
+        $place_address = mysqli_real_escape_string($condb, $_POST['address']);
+        $place_date = mysqli_real_escape_string($condb, $_POST['date']);
+
+        # Check if data is filled
+        if (empty($place_name) || empty($place_description) || empty($place_address) || empty($place_date)) {
+            echo "<script>alert('Please complete the form'); window.history.back();</script>";
+            exit;
+        }
+
+        # Save place data using prepared statements
+        $stmt = $condb->prepare("INSERT INTO activity (title, description, address, date) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("ssss", $place_name, $place_description, $place_address, $place_date);
+
+        # Command sign up success or failed
+        if ($stmt->execute()) {
+            echo "<script>alert('Submit Successfully!'); window.history.back();</script>";
+        } else {
+            echo "<script>alert('Submit Failed!'); window.history.back();</script>";
+        }
+
+        $stmt->close();
+    }
+    ?>
+
+    <!-- Place Panel -->
+    <form method="post" action="admin/user.php">
+        <!-- Place Name -->
+        <div class="box-title input-box">
+            <label for="title">Place Name</label>
+            <input type="text" name="title" id="title" class="input-title" required>
+        </div>
+        <!-- Description -->
+        <div class="box-desc input-box">
+            <label for="description">Description</label>
+            <input type="text" name="description" id="description" class="input-desc" required>
+        </div>
+        <!-- Address -->
+        <div class="box-address input-box">
+            <label for="address">Place Address</label>
+            <input type="text" name="address" id="address" class="input-address" required>
+        </div>
+        <!-- Date -->
+        <div class="box-date input-box">
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" class="input-date" required>
+        </div>
+        <!-- Submit Button -->
+        <div class="box-title input-box">
+            <input type="submit" class="submit-btn" value="Submit">
+        </div>
+    </form>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!-- Feedback Panel -->
         <div class="feedbackPanel">

@@ -15,6 +15,13 @@
     background-color: #028391;
 }
 
+.intro-Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
 .intro  {
     color: #000000;
     width: 60%;
@@ -163,7 +170,7 @@
     height: 100%;
     width: 100%;
     padding: 10px;
-    background-color: #287b4b;
+    background-color: #8bd7ab;
     border: 1px solid #000;
     border-radius: 5px;
   }

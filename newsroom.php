@@ -44,6 +44,9 @@ $news_result = mysqli_query($condb, $SQL_news); // Use $condb for database conne
     <article class="newsContainer">
         <!-- News & Update Content -->
         <div class="newsBox">
+            <div class="titleNews">
+                <h1>What's on news</h1>
+            </div>
             <?php
             if ($news_result && mysqli_num_rows($news_result) > 0) {
                 while ($row = mysqli_fetch_assoc($news_result)) {

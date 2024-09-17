@@ -33,7 +33,7 @@
                         <li><a href="receiver.php">Receiver</a></li>
                         <li><a href="newsroom.php">News & Updates</a></li>
                         <li><a href="mailto:imran24022004@gmail.com?subject=Contact Us Inquiry">Contact Us</a></li>
-                        <li><button class="btn-sign"><a href="profile.php">Profile</a></button></li>';
+                        <li><button class="btn-sign"><a href="profileR.php">Profile</a></button></li>';
 
                     } else {
 

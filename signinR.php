@@ -13,11 +13,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         # prepare the SQL statement
         $stmt = mysqli_prepare($condb, $login_command);
-        # Bind parameter to the prepared statement
         mysqli_stmt_bind_param($stmt, "ss", $rec_fullname, $rec_password);
-        # Execute the prepared statement
         mysqli_stmt_execute($stmt);
-        # Get result set from executed statement
         $result = mysqli_stmt_get_result($stmt);
 
         if (mysqli_num_rows($result) == 1) {

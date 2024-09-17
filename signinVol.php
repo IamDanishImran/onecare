@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo "<script>alert('Login Failed!'); window.history.back();</script>";
         }
     }
-    mysqli_close($condb); // Optional, but good practice
+    mysqli_close($condb);
 }
 ?>
 

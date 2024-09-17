@@ -1,10 +1,11 @@
 /* user.css */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
+    font-family: monospace;
+    background-color: #028391;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .dashboard {
@@ -43,7 +44,10 @@ body {
     gap: 10px;
 }
 
-.Wrapper, .uploadContainer, .viewContainer, .feedbackContainer {
+.Wrapper, 
+.uploadContainer, 
+.viewContainer, 
+.feedbackContainer {
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 5px;
@@ -53,16 +57,21 @@ body {
     justify-content: space-between;
 }
 
-.Wrapper p, .viewContainer h3, .viewContainer p, .feedbackItem p {
+.Wrapper p, 
+.viewContainer h3, 
+.viewContainer p, 
+.feedbackItem p {
     margin: 0;
 }
 
-.Wrapper form, .viewContainer form, .feedbackForm form {
+.Wrapper form, 
+.viewContainer form, 
+.feedbackForm form {
     margin-left: 20px;
 }
 
 button, input[type="submit"] {
-    background-color: #ff4d4d;
+    background-color: #FE7A36;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -71,7 +80,7 @@ button, input[type="submit"] {
 }
 
 button:hover, input[type="submit"]:hover {
-    background-color: #ff1a1a;
+    background-color: #FE7A36;
 }
 
 .uploadContainer form, .feedbackForm form {
@@ -81,7 +90,10 @@ button:hover, input[type="submit"]:hover {
     align-items: center;
 }
 
-.uploadContainer .form-group, .feedbackForm .form-group {
+.uploadContainer 
+.form-group, 
+.feedbackForm 
+.form-group {
     display: flex;
     flex-direction: column;
 }
@@ -97,7 +109,7 @@ button:hover, input[type="submit"]:hover {
 
 .uploadContainer input[type="submit"],
 .feedbackForm input[type="submit"] {
-    background-color: #4caf50;
+    background-color: #3652AD;
     color: white;
     border: none;
     padding: 10px;
@@ -107,7 +119,7 @@ button:hover, input[type="submit"]:hover {
 
 .uploadContainer input[type="submit"]:hover,
 .feedbackForm input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #3652AD;
 }
 
 .viewPanel, .feedbackPanel {
@@ -144,9 +156,37 @@ button:hover, input[type="submit"]:hover {
     color: #555;
 }
 
-/* Scrollable panels */
-.user-volunteer, .user-receiver, .newsWrapper, .viewWrapper, .feedbackWrapper {
-    max-height: 300px; /* Adjust this height as needed */
+.user-volunteer, 
+.user-receiver, 
+.newsWrapper, 
+.viewWrapper, 
+.feedbackWrapper {
+    max-height: 300px;
     overflow-y: auto;
-    padding-right: 10px; /* To prevent content from hiding behind the scrollbar */
+    padding-right: 10px;
+}
+
+/* --------- Place Panel --------- */
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+}
+
+.input-box label {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.input-title,
+.input-desc,
+.input-address,
+.input-date,
+.submit-btn {
+    height: 30px;
+    width: 300px;
+}
+
+.submit-btn {
+    margin-top: 10px;
 }

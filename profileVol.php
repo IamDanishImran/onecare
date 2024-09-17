@@ -20,8 +20,8 @@
                 session_start();
                 include 'connect.php';
 
-                if (isset($_SESSION['user'])) {
-                    $user_vol = $_SESSION['user'];
+                if (isset($_SESSION['user_vol'])) {
+                    $user_vol = $_SESSION['user_vol'];
                     // Output user information in a table row
                     $user_vol["name"]; $user_vol["password"]; $user_vol["address"]; $user_vol["phone"]; $user_vol["age"]; $user_vol["work"];
                 }

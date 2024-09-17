@@ -6,12 +6,11 @@
 }
 
 /* First Page */
-.Container {
+.IntroSection {
+    height: 100vh;
     width: auto;
-    background-color: #fff0e5;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 10%;
+    padding: 0 10%;
+    background-color: #028391;
 }
 
 .FirstPageContainer {
@@ -343,12 +342,10 @@
     width: 100%;
     width: auto;
     padding: 20px 10%;
-    background-color: grey;
 }
 
 .places-title {
     text-align: center;
-    background-color: yellow;
 }
 
 .places-title h1 {
@@ -407,6 +404,7 @@
 }
 
 #link {
+    text-decoration: none;
     color: #fff;
 }
 
